@@ -4,6 +4,11 @@ html {
     background: linear-gradient(200deg, #1C192D, #181A20);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -24,6 +29,8 @@ span {
 }
 
 .logo {
+    padding: 0;
+    margin: 0;
     width: 30vw;
     height: 10vh;
     background: url('logo.svg') no-repeat center center;

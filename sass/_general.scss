@@ -88,3 +88,43 @@ html, body {
     }
    
 }
+
+.content {
+    display: grid;
+}
+
+.promo {
+    max-height: 996px;
+    &__container {
+        height: 100%;
+        display: grid;
+        grid-template: 'left right' 1fr
+        / 5fr 7fr;
+    }
+
+    &--left {
+        grid-area: left;
+    }
+
+    &__header {
+        @include title;
+        margin-top: 21.736vw;
+    }
+
+    &__link {
+        display: block;
+        margin-top: 3.056vw;
+        font-weight: bold;
+        font-size: 1.53vw;
+        line-height: 1.875vw;
+        color: #A06AF9;
+        cursor: pointer;
+    }
+    &--right {
+        width: 50.833vw;
+        height: 55.21vw;
+        grid-area: right;
+        background: url('../image/promo1.png') center center/cover no-repeat;
+
+    }
+}

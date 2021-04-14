@@ -5,7 +5,8 @@
     font-family: Inter;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -19,11 +20,11 @@ html, body {
     min-height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 7.99vw 1fr 15.347vw ;
-    grid-template-areas: 
-    "header"
-    "content"
-    "footer";
+    grid-template-rows: 7.99vw 1fr 15.347vw;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
 }
 
 .header {
@@ -32,11 +33,10 @@ html, body {
 
     &__container {
         display: grid;
-        grid-template: "left right" 1fr
-        / 1fr 1fr;
+        grid-template: "left right"1fr / 1fr 1fr;
     }
 
-    
+
     &--left {
         display: flex;
         grid-area: left;
@@ -58,6 +58,7 @@ html, body {
             margin: 0;
             padding: 0;
             list-style: none;
+
             :first-child {
                 margin: 0;
             }
@@ -72,7 +73,7 @@ html, body {
                 }
             }
         }
-        
+
     }
 
     .btn {
@@ -86,7 +87,7 @@ html, body {
         padding: 1.25vw 1.6vw;
         cursor: pointer;
     }
-   
+
 }
 
 .content {
@@ -97,8 +98,7 @@ html, body {
     &__container {
         height: 100%;
         display: grid;
-        grid-template: 'left right' 1fr
-        / 5fr 7fr;
+        grid-template: 'left right'1fr / 5fr 7fr;
     }
 
     &--left {
@@ -119,6 +119,7 @@ html, body {
         color: #A06AF9;
         cursor: pointer;
     }
+
     &--right {
         width: 50.833vw;
         height: 55.21vw;
@@ -144,11 +145,12 @@ html, body {
     &__slider {
         display: flex;
 
-        .wrapper-slider{
+        .wrapper-slider {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-top: 3.472vw;
+
             :last-child {
                 margin-right: 0;
             }
@@ -161,6 +163,7 @@ html, body {
         &__item {
             margin-right: 2.36vw;
             margin-left: 2.36vw;
+
             img {
                 width: 100%;
             }
@@ -177,7 +180,7 @@ html, body {
         .active {
             margin-left: 0;
             margin-right: 0;
-          
+
             img {
                 width: 120%;
             }
@@ -185,6 +188,7 @@ html, body {
 
         .arrow {
             align-self: center;
+
             &--left {
                 transform: rotate(180deg);
                 margin-left: 3.472vw;
@@ -199,9 +203,11 @@ html, body {
 
 .payment {
     padding-top: 6.94vw;
+
     &__header {
         @include title;
     }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -230,7 +236,7 @@ html, body {
             img {
                 width: 15.625vw;
             }
-            
+
             &--width {
 
                 img {
@@ -254,7 +260,7 @@ html, body {
             }
         }
     }
-   
+
 }
 
 .search {
@@ -274,6 +280,7 @@ html, body {
     &__img {
         justify-self: center;
         grid-row: 2/3;
+
         img {
             width: 15.625vw;
         }
@@ -284,7 +291,7 @@ html, body {
             }
         }
     }
-   
+
     &__descr {
         justify-self: center;
         grid-row: 3/4;
@@ -293,4 +300,53 @@ html, body {
         width: 35.625vw;
         text-align: center;
     }
+}
+
+.functions {
+    padding-top: 9.375vw;
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        @include title;
+        margin-bottom: 6.597vw;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__numb {
+        transform: rotate(270deg);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 6.944vw;
+        line-height: 6.944vw;
+        color: rgba(104, 108, 124, 0.3);
+    }
+    &__img {
+        margin-top: 3.472vw;
+        margin-left: 3.472vw;
+        img {
+            width: 15.625vw;
+        }
+        
+        &--width {
+            margin-top: 0;
+            margin-left: 4.6vw;
+            img {
+                width: 30.903vw;
+            }
+        }
+    }
+
+    &__text {
+        margin-left: 6.944vw;
+        @include text;
+        width: 37.71vw;
+    }
+
 }

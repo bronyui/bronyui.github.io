@@ -196,3 +196,56 @@ html, body {
         }
     }
 }
+
+.payment {
+    padding-top: 6.94vw;
+    &__header {
+        @include title;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        &--one {
+            margin-top: 6.94vw;
+        }
+
+        &--reverse {
+            flex-direction: row-reverse;
+        }
+
+        &__img {
+
+            img {
+                width: 15.625vw;
+            }
+            
+            &--width {
+                img {
+                    width: 29.896vw;
+                }
+            }
+        }
+        
+        &__descr {
+            @include text;
+            width: 35.625vw;
+            margin-left: 6.94vw;
+
+            &--reverse {
+                margin-left: 0;
+                margin-right: 6.94vw;
+            }
+
+            &--width {
+                width: 37.71vw;
+            }
+        }
+    }
+   
+}

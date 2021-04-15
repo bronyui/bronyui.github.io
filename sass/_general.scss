@@ -352,6 +352,7 @@ body {
 }
 
 .plan {
+    padding-top: 9.375vw;
 
     &__container {
         display: flex;
@@ -468,4 +469,58 @@ body {
         margin-right: 6.25vw;
     }
 
+}
+
+.communication {
+    padding-top: 10.42vw;
+
+    &__header {
+        @include title;
+        margin-bottom: 3.82vw;
+    }
+
+    &__text {
+        @include text;
+        font-size: 3.06vw;
+
+        input {
+            display: inline;
+            border: none;
+            opacity: 0.3;
+            font-size: 3.06vw;
+            text-decoration: underline;
+        }
+
+        &--name {
+            input {
+                width: 13.96vw;
+            }
+            
+        }
+
+        &--email {
+            margin-top: 2.08vw;
+            input {
+                width: 18.06vw;
+            }
+            
+        }
+
+        &--onFocus {
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 2.78vw;
+        color: #246BFD;
+        font-weight: bold;
+        font-size: 1.875vw;
+        border: none;
+        border-bottom: 3px solid #246BFD;
+        background-color: #fff;
+        cursor: pointer;
+    }
 }

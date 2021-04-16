@@ -41,8 +41,9 @@ let {src, dest} = require('gulp'),
     uglify = require("gulp-uglify-es").default,
     ttf2woff = require("gulp-ttf2woff"),
     imagemin = require("gulp-imagemin"),
-    ttf2woff2 = require("gulp-ttf2woff2"),
-    fonter = require("gulp-fonter")
+    ttf2woff2 = require("gulp-ttf2woff2")
+ 
+
 
 
 function browserSync(params) {
@@ -145,6 +146,7 @@ function clean(params) {
 
 let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts))
 let watch = gulp.parallel(build, watchFiles, browserSync)
+
 
 exports.fonts = fonts
 exports.images = images

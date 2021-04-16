@@ -1,7 +1,11 @@
 @import 'fonts';
-@import 'mixins';
 @import 'variables';
-
+@import 'mixins';
+@import 'blocks/general';
+@import 'blocks/footer';
+@import 'blocks/header';
+@import 'blocks/communication_form';
+@import 'media';
 
 * {
     font-family: Inter;

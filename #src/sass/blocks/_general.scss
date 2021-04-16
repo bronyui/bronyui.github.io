@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    width: 83.33vw;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7.99vw 1fr 15.347vw;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+}
+
+
+.content {
+    display: grid;
+}

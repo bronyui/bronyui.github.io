@@ -1,0 +1,59 @@
+.work {
+    &__slider {
+        display: flex;
+    
+        .wrapper-slider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3.472vw;
+    
+            :last-child {
+                margin-right: 0;
+            }
+    
+            :first-child {
+                margin-left: 0;
+            }
+        }
+    
+        &__item {
+            margin-right: 2.36vw;
+            margin-left: 2.36vw;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        &__text {
+            margin-top: 2.153vw;
+            text-align: center;
+            @include navItem;
+            color: #686C7C;
+    
+        }
+    
+        .active {
+            margin-left: 0;
+            margin-right: 0;
+    
+            img {
+                width: 120%;
+            }
+        }
+    
+        .arrow {
+            align-self: center;
+    
+            &--left {
+                transform: rotate(180deg);
+                margin-left: 3.472vw;
+            }
+    
+            &--right {
+                margin-right: 3.472vw;
+            }
+        }
+    }
+}

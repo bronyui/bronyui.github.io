@@ -34,42 +34,7 @@
                     <div class="work__text">процес бронювання послуги</div>
                 </div>
 
-                <div class="work__slider">
-                    <div class="arrow arrow--left">
-                        <img src="./image/Right Chevron.svg" alt="arrow">
-                    </div>
-                    <div class="container">
-                        <div class="wrapper-slider">
-                            <div class="work__slider__item">
-                                <img src="./image/p1sa.png" alt="">
-                                <div class="work__slider__text"></div>
-                            </div>
-
-                            <div class="work__slider__item">
-                                <img src="./image/p1s2.png" alt="">
-                                <div class="work__slider__text"></div>
-                            </div>
-
-                            <div class="work__slider__item active">
-                                <img src="./image/p1s3.png" alt="">
-                                <div class="work__slider__text">обери сенсея</div>
-                            </div>
-
-                            <div class="work__slider__item">
-                                <img src="./image/p1s4.png" alt="">
-                                <div class="work__slider__text"></div>
-                            </div>
-
-                            <div class="work__slider__item">
-                                <img src="./image/p1s5.png" alt="">
-                                <div class="work__slider__text"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="arrow arrow--right">
-                        <img src="./image/Right Chevron.svg" alt="arrow">
-                    </div>
-                </div>
+                @@include('_slider.html')
             </section>
 
             <section class="payment">
@@ -169,19 +134,8 @@
                     </div>
                 </div>
             </section>
-
-            <section class="communication">
-                <div class="container communication__container">
-                    <form action="" class="communication__form">
-                        <h2 class="communication__header">давайте поспілкуємось ☕️</h2>
-                        <div class="communication__text communication__text--name">привіт, мене звати <input type="text" placeholder="ваше ім'я" class="communication__input">,</div>
-                        <div class="communication__text communication__text--email">напишіть мені на <input type="email" placeholder="ваша пошта" class="communication__input">!</div>
-
-                        <button type="submit" class="communication__btn">надіслати</button>
-                    </form>
-
-                </div>
-            </section>
+            @@include('_communication.html')
+           
         </div>
         @@include('_footer.html')
     </div>

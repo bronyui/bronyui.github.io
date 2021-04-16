@@ -1,0 +1,63 @@
+
+.header {
+    max-height: 115px;
+    align-self: flex-end;
+
+    &__container {
+        display: grid;
+        grid-template: "left right"1fr / 1fr 1fr;
+    }
+
+
+    &--left {
+        display: flex;
+        grid-area: left;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &--right {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        grid-area: right;
+    }
+
+    .menu {
+        &-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            :first-child {
+                margin: 0;
+            }
+
+            &__item {
+                display: inline-flex;
+                margin-left: 9.03vw;
+
+                a {
+                    text-decoration: none;
+                    @include navItem;
+                }
+            }
+        }
+
+    }
+
+    .btn {
+        max-height: 50px;
+        background: #A06AF9;
+        border-radius: 3.472vw;
+        font-size: 0.972vw;
+        color: #FFFFFF;
+        font-weight: 500;
+        border: none;
+        padding: 1.25vw 1.6vw;
+        cursor: pointer;
+    }
+
+}

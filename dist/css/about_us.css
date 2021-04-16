@@ -62,6 +62,39 @@ body {
   display: grid;
 }
 
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1180px;
+  }
+  .wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 115px 1fr 220px;
+    grid-template-areas: "header" "content" "footer";
+  }
+}
+
+.btn {
+  max-height: 50px;
+  background: #A06AF9;
+  border-radius: 3.472vw;
+  font-size: 0.972vw;
+  color: #FFFFFF;
+  font-weight: 500;
+  border: none;
+  padding: 1.25vw 1.6vw;
+  cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+  .btn {
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 18px 24px;
+  }
+}
+
 .footer {
   padding: 12.5vw 0;
 }
@@ -90,8 +123,16 @@ body {
   grid-column: 5/7;
 }
 
+.footer__contacts img {
+  width: 1.67vw;
+}
+
 .footer__contacts :last-child {
   margin-right: 0;
+}
+
+.footer__contacts :last-child img {
+  width: 1.389vw;
 }
 
 .footer__link {
@@ -138,12 +179,52 @@ body {
   grid-column: 5/7;
 }
 
+.footer__stores img {
+  width: 9.375vw;
+}
+
 .footer__stores :last-child {
   margin-right: 0;
 }
 
 .footer__store {
   margin-right: 0.694vw;
+}
+
+@media (min-width: 1440px) {
+  .footer {
+    padding: 180px 0;
+  }
+  .footer__logo {
+    width: 119px;
+  }
+  .footer__contacts img {
+    width: 24px;
+  }
+  .footer__link {
+    margin-right: 30px;
+  }
+  .footer__docs {
+    margin-top: 41px;
+  }
+  .footer__doc {
+    margin-right: 46px;
+  }
+  .footer__doc a {
+    font-size: 14px;
+  }
+  .footer__stores {
+    margin-top: 26px;
+  }
+  .footer__stores :last-child img {
+    width: 120px;
+  }
+  .footer__store {
+    margin-right: 10px;
+  }
+  .footer__store img {
+    width: 135px;
+  }
 }
 
 .header {
@@ -165,7 +246,7 @@ body {
 }
 
 .header--left img {
-  width: 100%;
+  width: 8.264vw;
 }
 
 .header--right {
@@ -205,16 +286,17 @@ body {
   font-size: 1.25vw;
 }
 
-.header .btn {
-  max-height: 50px;
-  background: #A06AF9;
-  border-radius: 3.472vw;
-  font-size: 0.972vw;
-  color: #FFFFFF;
-  font-weight: 500;
-  border: none;
-  padding: 1.25vw 1.6vw;
-  cursor: pointer;
+@media (min-width: 1440px) {
+  .header--left img {
+    width: 119px;
+  }
+  .header .menu-list__item {
+    margin-left: 130px;
+  }
+  .header .menu-list__item a {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .communication {
@@ -271,103 +353,37 @@ body {
   cursor: pointer;
 }
 
-* {
-  font-family: Inter;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: Inter;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-.container {
-  display: grid;
-  margin: 0 auto;
-  width: 83.33vw;
-}
-
-.wrapper {
-  min-height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 7.99vw 1fr 15.347vw;
-  grid-template-areas: "header" "content" "footer";
-}
-
-.header {
-  max-height: 115px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.header__container {
-  display: grid;
-  grid-template: "left right" 1fr/1fr 1fr;
-}
-
-.header--left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  grid-area: left;
-}
-
-.header--left img {
-  width: 100%;
-}
-
-.header--right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  grid-area: right;
-}
-
-.header .menu-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.header .menu-list :first-child {
-  margin: 0;
-}
-
-.header .menu-list__item {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin-left: 9.03vw;
-}
-
-.header .menu-list__item a {
-  color: #4e5256;
-  font-weight: 500;
-  font-size: 1.25vw;
-  text-decoration: none;
-}
-
-.header .btn {
-  max-height: 50px;
-  background: #246BFD;
-  border-radius: 3.472vw;
-  font-size: 0.972vw;
-  color: #FFFFFF;
-  font-weight: 500;
-  border: none;
-  padding: 1.25vw 1.6vw;
-  cursor: pointer;
+@media (min-width: 1440px) {
+  .communication {
+    padding-top: 150px;
+  }
+  .communication__header {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 55px;
+  }
+  .communication__text {
+    font-size: 44px;
+  }
+  .communication__text input {
+    font-size: 44px;
+  }
+  .communication__text--name input {
+    width: 201px;
+  }
+  .communication__text--email {
+    margin-top: 30px;
+  }
+  .communication__text--email input {
+    width: 260px;
+  }
+  .communication__text--onFocus input {
+    width: 100%;
+  }
+  .communication__btn {
+    margin-top: 40px;
+    font-size: 27px;
+  }
 }
 
 .promo__container {

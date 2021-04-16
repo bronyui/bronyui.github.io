@@ -57,3 +57,40 @@
         }
     }
 }
+
+@media (min-width: 1440px) {
+    .work {
+        &__slider {
+            .wrapper-slider {
+                margin-top: 50px;
+            }
+        
+            &__item {
+               margin: 0 33px;
+            }
+        
+            &__text {
+                margin-top: 31px;
+                font-size: 18px;
+            }
+        
+            .active {
+                margin: 0 33px;
+                img {
+                    width: 194.58px;
+                }
+            }
+        
+            .arrow {
+        
+                &--left {
+                    margin-left: 50px;
+                }
+        
+                &--right {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}

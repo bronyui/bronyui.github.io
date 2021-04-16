@@ -2,103 +2,11 @@
 @import 'variables';
 @import 'mixins';
 @import 'blocks/general';
+@import 'blocks/btn';
 @import 'blocks/footer';
 @import 'blocks/header';
 @import 'blocks/communication_form';
-@import 'media';
 
-* {
-    font-family: Inter;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Inter;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-.container {
-    display: grid;
-    margin: 0 auto;
-    width: 83.33vw;
-}
-
-.wrapper {
-    min-height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 7.99vw 1fr 15.347vw;
-    grid-template-areas:
-        "header"
-        "content"
-        "footer";
-}
-
-.header {
-    max-height: 115px;
-    align-self: flex-end;
-
-    &__container {
-        display: grid;
-        grid-template: "left right"1fr / 1fr 1fr;
-    }
-
-
-    &--left {
-        display: flex;
-        grid-area: left;
-
-        img {
-            width: 100%;
-        }
-    }
-
-    &--right {
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-end;
-        grid-area: right;
-    }
-
-    .menu {
-        &-list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-
-            :first-child {
-                margin: 0;
-            }
-
-            &__item {
-                display: inline-flex;
-                margin-left: 9.03vw;
-
-                a {
-                    @include navItem;
-                    text-decoration: none;
-                }
-            }
-        }
-
-    }
-
-    .btn {
-        max-height: 50px;
-        background: #246BFD;
-        border-radius: 3.472vw;
-        font-size: 0.972vw;
-        color: #FFFFFF;
-        font-weight: 500;
-        border: none;
-        padding: 1.25vw 1.6vw;
-        cursor: pointer;
-    }
-
-}
 
 .promo {
     &__container {

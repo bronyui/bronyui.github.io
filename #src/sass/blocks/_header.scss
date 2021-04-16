@@ -14,7 +14,7 @@
         grid-area: left;
 
         img {
-            width: 100%;
+             width: 8.264vw;
         }
     }
 
@@ -48,16 +48,30 @@
 
     }
 
-    .btn {
-        max-height: 50px;
-        background: #A06AF9;
-        border-radius: 3.472vw;
-        font-size: 0.972vw;
-        color: #FFFFFF;
-        font-weight: 500;
-        border: none;
-        padding: 1.25vw 1.6vw;
-        cursor: pointer;
-    }
+}
 
+@media (min-width: 1440px) {
+    .header {
+        &--left {
+            img {
+                width: 119px;
+            }
+        }
+     
+        .menu {
+            &-list {
+               
+                &__item {
+                    margin-left: 130px;
+    
+                    a {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+    
+        }
+    
+    }
 }

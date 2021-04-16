@@ -1,0 +1,19 @@
+.btn {
+    max-height: 50px;
+    background: #A06AF9;
+    border-radius: 3.472vw;
+    font-size: 0.972vw;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: none;
+    padding: 1.25vw 1.6vw;
+    cursor: pointer;
+}
+
+@media (min-width: 1440px) {
+    .btn {
+        border-radius: 50px;
+        font-size: 14px;
+        padding: 18px 24px;
+    }
+   }

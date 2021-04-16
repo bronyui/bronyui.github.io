@@ -27,7 +27,22 @@ body {
         "footer";
 }
 
-
 .content {
     display: grid;
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1180px;
+    }
+    .wrapper {
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 115px 1fr 220px;
+        grid-template-areas:
+            "header"
+            "content"
+            "footer";
+    }
 }

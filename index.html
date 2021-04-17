@@ -5,14 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="../css/style.min.css">
     <title>бронюй</title>
 </head>
 
 <body>
     <div class="wrapper">
-       @@include('_header.html')
-       
+        <header class="header">
+            <div class="container header__container">
+                <div class="header--left">
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-list__item"><a href="./index.html"><img src="./image/logo.svg"
+                                        alt="logo"></a></li>
+                            <li class="menu-list__item text"><a href="./pages/business.html">для бізнесу</a></li>
+                            <li class="menu-list__item text"><a href="./pages/about_us.html">про нас</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header--right">
+                    <button class="btn">поспілкуємось?</button>
+                </div>
+            </div>
+
+        </header>
+
 
         <div class="content">
             <section class="promo">
@@ -34,7 +52,42 @@
                     <div class="work__text">процес бронювання послуги</div>
                 </div>
 
-                @@include('_slider.html')
+                <div class="work__slider">
+                    <div class="arrow arrow--left">
+                        <img src="./image/Right Chevron.svg" alt="arrow">
+                    </div>
+                    <div class="container">
+                        <div class="wrapper-slider">
+                            <div class="work__slider__item">
+                                <img src="./image/p1sa.png" alt="">
+                                <div class="work__slider__text"></div>
+                            </div>
+
+                            <div class="work__slider__item">
+                                <img src="./image/p1s2.png" alt="">
+                                <div class="work__slider__text"></div>
+                            </div>
+
+                            <div class="work__slider__item active">
+                                <img src="./image/p1s3.png" alt="">
+                                <div class="work__slider__text">обери сенсея</div>
+                            </div>
+
+                            <div class="work__slider__item">
+                                <img src="./image/p1s4.png" alt="">
+                                <div class="work__slider__text"></div>
+                            </div>
+
+                            <div class="work__slider__item">
+                                <img src="./image/p1s5.png" alt="">
+                                <div class="work__slider__text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow arrow--right">
+                        <img src="./image/Right Chevron.svg" alt="arrow">
+                    </div>
+                </div>
             </section>
 
             <section class="payment">
@@ -112,32 +165,76 @@
 
                         <div class="plan__line plan__line--dotted"></div>
 
-                        <div class="plan__round plan__round--one"><div class="plan__round plan__round--one"></div></div>
+                        <div class="plan__round plan__round--one">
+                            <div class="plan__round plan__round--one"></div>
+                        </div>
                         <div class="plan__line plan__line--one"></div>
 
-                        <div class="plan__round plan__round--two"><div class="plan__round plan__round--two"></div></div>
+                        <div class="plan__round plan__round--two">
+                            <div class="plan__round plan__round--two"></div>
+                        </div>
                         <div class="plan__line plan__line--two"></div>
 
-                        <div class="plan__round plan__round--three"><div class="plan__round plan__round--three"></div></div>
+                        <div class="plan__round plan__round--three">
+                            <div class="plan__round plan__round--three"></div>
+                        </div>
                         <div class="plan__line plan__line--three"></div>
 
-                        <div class="plan__round plan__round--four"><div class="plan__round plan__round--four"></div></div>
+                        <div class="plan__round plan__round--four">
+                            <div class="plan__round plan__round--four"></div>
+                        </div>
                         <div class="plan__line plan__line--four"></div>
 
                     </div>
 
                     <div class="plan__text">
-                        <div class="plan__descr">розробка  <br> клієнтського додатку 🔨</div>
-                        <div class="plan__descr">розробка  <br> бізнес додатку 🗿</div>
-                        <div class="plan__descr">розробка бізнес  <br> додатку для браузеру 💻</div>
+                        <div class="plan__descr">розробка <br> клієнтського додатку 🔨</div>
+                        <div class="plan__descr">розробка <br> бізнес додатку 🗿</div>
+                        <div class="plan__descr">розробка бізнес <br> додатку для браузеру 💻</div>
                         <div class="plan__descr">реліз 🚀 🎉</div>
                     </div>
                 </div>
             </section>
-            @@include('_communication.html')
-           
+            <section class="communication">
+                <div class="container communication__container">
+                    <form action="" class="communication__form">
+                        <h2 class="communication__header">давайте поспілкуємось ☕️</h2>
+                        <div class="communication__text communication__text--name">привіт, мене звати <input type="text"
+                                placeholder="ваше ім'я" class="communication__input">,</div>
+                        <div class="communication__text communication__text--email">напишіть мені на <input type="email"
+                                placeholder="ваша пошта" class="communication__input">!</div>
+
+                        <button type="submit" class="communication__btn">надіслати</button>
+                    </form>
+
+                </div>
+            </section>
+
         </div>
-        @@include('_footer.html')
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__logo"><img src="./image/logo.svg" alt="logo"></div>
+
+                <div class="footer__contacts">
+                    <div class="footer__link"><a href="#"><img src="./image/Mail.svg" alt=""></a></div>
+                    <div class="footer__link"><a href="#"><img src="./image/Instagram.svg" alt=""></a></div>
+                    <div class="footer__link"><a href="#"><img src="./image/Twitter.svg" alt=""></a></div>
+                    <div class="footer__link"><a href="#"><img src="./image/Vector.svg" alt=""></a></div>
+                </div>
+
+                <div class="footer__docs">
+                    <div class="footer__doc"><a href="#">політика конфіденційності</a></div>
+                    <div class="footer__doc"><a href="#">публічна оферта</a></div>
+                </div>
+
+                <div class="footer__stores">
+                    <div class="footer__store"><a href="#"><img
+                                src="./image/appstore/Store=Google Play, Style=Outline.svg" alt=""></a></div>
+                    <div class="footer__store"><a href="#"><img
+                                src="./image/appstore/Store=App Store, Style=Outline.svg" alt=""></a></div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 

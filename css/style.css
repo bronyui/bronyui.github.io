@@ -454,6 +454,7 @@ body {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 25px;
+    height: 25px;
     z-index: 2;
   }
   .header .hamburger span {

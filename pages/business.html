@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/business.min.css">
-    <title>Document</title>
+    <title>бронюй</title>
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
+
                 <div class="header--left">
                     <div class="hamburger">
                         <span></span>
@@ -23,15 +24,18 @@
                         <ul class="menu-list">
                             <li class="menu-list__item"><a href="../index.html"><img src="../image/logo.svg"
                                         alt="logo"></a></li>
-                            <li class="menu-list__item text"><a href="./business.html">для бізнесу</a></li>
-                            <li class="menu-list__item text"><a href="./about_us.html">про нас</a></li>
+                            <li class="menu-list__item "><a href="./business.html">для бізнесу</a></li>
+                            <li class="menu-list__item "><a href="./about_us.html">про нас</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="header--right">
-                    <button class="btn">поспілкуємось?</button>
+                    <a href="#end" class="btn">поспілкуємось?</a>
                 </div>
+
+
+
             </div>
 
         </header>
@@ -41,7 +45,7 @@
                 <div class="container promo__container">
                     <div class="promo--left">
                         <h1 class="promo__header">бізнес у твоїй кишені</h1>
-                        <a id="plan" href="#" class="promo__link">план розвитку 🚀</a>
+                        <a href="../index.html#plan" class="promo__link">шо по планам 💸</a>
                     </div>
 
                     <div class="promo--right">
@@ -83,7 +87,7 @@
                                 <div class="work__slider__text"></div>
                             </div>
 
-                            <div class="work__slider__item active">
+                            <div class="work__slider__item">
                                 <img src="../image/p1s3.png" alt="">
                                 <div class="work__slider__text">обери сенсея</div>
                             </div>
@@ -101,6 +105,33 @@
                     </div>
                     <div class="arrow arrow--right">
                         <img src="../image/Right Chevron.svg" alt="arrow">
+                    </div>
+                </div>
+
+                <div class="wrapper-slider-tablet">
+                    <div class="tablet__slider__item">
+                        <img src="../image/p1sa.png" alt="">
+                        <div class="work__slider__text"></div>
+                    </div>
+
+                    <div class="tablet__slider__item">
+                        <img src="../image/p1s2.png" alt="">
+                        <div class="work__slider__text"></div>
+                    </div>
+
+                    <div class="tablet__slider__item">
+                        <img src="../image/p1s3.png" alt="">
+                        <div class="tablet__slider__text">обери сенсея</div>
+                    </div>
+
+                    <div class="tablet__slider__item">
+                        <img src="../image/p1s4.png" alt="">
+                        <div class="tablet__slider__text"></div>
+                    </div>
+
+                    <div class="tablet__slider__item">
+                        <img src="../image/p1s5.png" alt="">
+                        <div class="tablet__slider__text"></div>
                     </div>
                 </div>
 
@@ -215,7 +246,7 @@
                 </div>
             </section>
 
-            <section class="communication">
+            <section id="end" class="communication">
                 <div class="container communication__container">
                     <form action="" class="communication__form">
                         <h2 class="communication__header">давайте поспілкуємось ☕️</h2>
@@ -261,6 +292,7 @@
 
 
     <script src="../js/main.min.js"></script>
+    <script src="../js/workSlider.min.js"></script>
 </body>
 
 </html>

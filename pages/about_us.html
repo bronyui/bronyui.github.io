@@ -13,6 +13,7 @@
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
+
                 <div class="header--left">
                     <div class="hamburger">
                         <span></span>
@@ -23,15 +24,18 @@
                         <ul class="menu-list">
                             <li class="menu-list__item"><a href="../index.html"><img src="../image/logo.svg"
                                         alt="logo"></a></li>
-                            <li class="menu-list__item text"><a href="./business.html">для бізнесу</a></li>
-                            <li class="menu-list__item text"><a href="./about_us.html">про нас</a></li>
+                            <li class="menu-list__item "><a href="./business.html">для бізнесу</a></li>
+                            <li class="menu-list__item "><a href="./about_us.html">про нас</a></li>
                         </ul>
                     </nav>
                 </div>
 
                 <div class="header--right">
-                    <button class="btn">поспілкуємось?</button>
+                    <a href="#end" class="btn">поспілкуємось?</a>
                 </div>
+
+
+
             </div>
 
         </header>
@@ -75,19 +79,26 @@
                     </div>
                     <div class="container">
                         <div class="wrapper-slider">
-                            <div class="team__slider__item">
-                                <img class="team__member team__member--one" src="../image/about_us/girl1.png" alt="">
-                                <div class="team__slider__text"> <span>Лєра</span> <br> UX/UI artist</div>
+                            <div class="item">
+                                <div class="team__slider__item">
+                                    <img class="team__member team__member--one" src="../image/about_us/girl1.png"
+                                        alt="person">
+                                    <div class="team__slider__text"> <span>Лєра</span> <br> UX/UI artist</div>
+                                </div>
+
+                                <div class="team__slider__item">
+                                    <img class="team__member team__member--two" src="../image/about_us/girl2.png"
+                                        alt="person">
+                                    <div class="team__slider__text"> <span>Ангелінa</span> <br> sales manager</div>
+                                </div>
                             </div>
 
-                            <div class="team__slider__item">
-                                <img class="team__member team__member--two" src="../image/about_us/girl2.png" alt="">
-                                <div class="team__slider__text"> <span>Ангелінa</span> <br> sales manager</div>
-                            </div>
-
-                            <div class="team__slider__item">
-                                <!-- <img class="team__member team__member--three" src="" alt=""> -->
-                                <div class="team__slider__text"> <span></span></div>
+                            <div class="item">
+                                <div class="team__slider__item">
+                                    <img class="team__member team__member--three" src="../image/about_us/girl1.png"
+                                        alt="person">
+                                    <div class="team__slider__text"> <span></span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -97,7 +108,7 @@
                 </div>
             </section>
 
-            <section class="communication">
+            <section id="end" class="communication">
                 <div class="container communication__container">
                     <form action="" class="communication__form">
                         <h2 class="communication__header">давайте поспілкуємось ☕️</h2>
@@ -142,6 +153,7 @@
 
 
     <script src="../js/main.min.js"></script>
+    <script src="../js/teamSlider.min.js"></script>
 </body>
 
 </html>

@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <title>бронюй</title>
-</head>
-
-<body>
-    <div class="wrapper">
-        <header class="header">
+    <head>
+        <meta charset="utf-8">
+        <title>Бронюй</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    </head>
+    <body>
+        <header id="hdr1" class="header">
             <div class="container header__container">
-
                 <div class="header--left">
                     <div class="hamburger">
                         <span></span>
@@ -22,264 +19,720 @@
                     </div>
                     <nav class="menu">
                         <ul class="menu-list">
-                            <li class="menu-list__item"><a href="./index.html"><img src="./image/logo.svg"
-                                        alt="logo"></a></li>
-                            <li class="menu-list__item "><a href="./pages/business.html">для бізнесу</a></li>
-                            <li class="menu-list__item "><a href="./pages/about_us.html">про нас</a></li>
+                            <li class="menu-list__item">
+                                <a style="font-size:0;" href="./index.html">
+                                    <img src="./assets/logo.svg" alt="logo">
+                                </a>
+                            </li>
+                            <li class="menu-list__item ">
+                                <a href="./pages/business.html">для бізнесу</a>
+                            </li>
+                            <li class="menu-list__item ">
+                                <a href="./pages/about_us.html">про нас</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
-
                 <div class="header--right">
                     <a href="#end" class="btn">поспілкуємось?</a>
                 </div>
-
-
-
             </div>
-
         </header>
-
-        <div class="content">
-            <section class="promo">
-                <div class="container promo__container">
-                    <div class="promo--left">
-                        <h1 class="promo__header">спростіть своє життя</h1>
-                        <a href="#plan" class="promo__link">план розвитку 🚀</a>
-                    </div>
-
-                    <div class="promo--right">
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="work">
-                <div class="container">
-                    <h2 class="work__header">як це працює</h2>
-                    <div class="work__text">процес бронювання послуги</div>
-
-                </div>
-
-                <div class="work__slider">
-                    <div class="arrow arrow--left">
-                        <img src="./image/Right Chevron.svg" alt="arrow">
-                    </div>
-                    <div class="container">
-                        <div class="wrapper-slider">
-                            <div class="work__slider__item">
-                                <img src="./image/p1sa.png" alt="">
-                                <div class="work__slider__text"></div>
+        <div class="swiper-container swiper-container0">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="promo">
+                        <div class="container promo__container">
+                            <div class="promo--left">
+                                <h1 class="promo__header">спростіть своє життя</h1>
+                                <span style="float:left; display:flex;"><a href="#plan" class="promo__link">план розвитку</a><a style="margin-top: auto;
+                                    margin-bottom: auto;
+                                    padding-top: 35px;">🚀</a></span>
                             </div>
-
-                            <div class="work__slider__item">
-                                <img src="./image/p1s2.png" alt="">
-                                <div class="work__slider__text"></div>
-                            </div>
-
-                            <div class="work__slider__item">
-                                <img src="./image/p1s3.png" alt="">
-                                <div class="work__slider__text">обери сенсея</div>
-                            </div>
-
-                            <div class="work__slider__item">
-                                <img src="./image/p1s4.png" alt="">
-                                <div class="work__slider__text"></div>
-                            </div>
-
-                            <div class="work__slider__item">
-                                <img src="./image/p1s5.png" alt="">
-                                <div class="work__slider__text"></div>
+                            <div class="promo--right">
+                                <img style="top: 50%;
+                margin-top: -500px;
+                position: absolute;
+                right: 30%;
+                margin-right: -500px;
+                height: 1000px;
+                width: 1000px;
+                border-radius: 0px;" src="assets/Gradient.png">
+                                <img style="
+                position: relative;
+               " width="300" src="assets/Group 19.png">
                             </div>
                         </div>
-                    </div>
-                    <div class="arrow arrow--right">
-                        <img src="./image/Right Chevron.svg" alt="arrow">
-                    </div>
-                </div>
+                    </section>
+                    <!--     <div id="container">
+            <div>
+<h1 style="text-align: center;
+border: 3px solid green;">спростіть своє життя</h1>
 
-                <div class="wrapper-slider-tablet">
-                    <div class="tablet__slider__item">
-                        <img src="./image/p1sa.png" alt="">
+            </div>
+            <div >
+                <img style="top: 50%;
+                margin-top: -375px;position:absolute;right:0%;height: 100%;
+width: 50%;
+border-radius: 0px;
+"   src="assets/Gradient.png"/>
+            
+                <img style="margin-top: auto;
+                margin-bottom: auto;
+                position: relative;
+                display: inline-block;
+                top: 50%;
+                margin-top: -300px;" width="300"  src="assets/Group 19.png"/>
+           
+            
+              </div>
+      
+          </div>-->
+                </div>
+                <div class="swiper-slide">
+                    <section style="margin-top: auto;
+                    margin-bottom: auto;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    height: 100vh;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;" class="work">
+                        <div class="container">
+                            <h2 class="work__header">як це працює</h2>
+                            <div class="work__text">процес бронювання послуги</div>
+                        </div>
+                        <div style="position:relative;">
+                        <div class="swiper-container swiper-container1">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swpnotheight">
+                                    <img style="
+              position: relative;
+             " width="160" src="assets/iphone-12--blue-1.png">
+                                    <p>обери сенсея1</p>
+                                </div>
+                                <div class="swiper-slide swpnotheight">
+                                    <img style="
+              position: relative;
+             " width="160" src="assets/iphone-12--blue-2.png">
+                                    <p>обери сенсея2</p>
+                                </div>
+                                <div class="swiper-slide swpnotheight">
+                                    <img style="
+              position: relative;
+             " width="160" src="assets/iphone-12--blue-3.png">
+                                    <p>обери сенсея3</p>
+                                </div>
+                                <div class="swiper-slide swpnotheight">
+                                    <img style="
+                  position: relative;
+                 " width="160" src="assets/iphone-12--blue-4.png">
+                                    <p>обери сенсея4</p>
+                                </div>
+                                <div class="swiper-slide swpnotheight">
+                                    <img style="
+                      position: relative;
+                     " width="160" src="assets/iphone-12--blue-4.png">
+                                    <p>обери сенсея5</p>
+                                </div>
+                            </div>
+                           
+                        </div> <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div></div>
+                        <!--   <div class="work__slider">
+            <div class="arrow arrow--left">
+                <img src="./assets/Right Chevron.svg" alt="arrow">
+            </div>
+            <div class="container">
+                <div class="wrapper-slider">
+                    <div class="work__slider__item active">
+                        <img src="./assets/p1sa.png" alt="">
                         <div class="work__slider__text"></div>
                     </div>
 
-                    <div class="tablet__slider__item">
-                        <img src="./image/p1s2.png" alt="">
+                    <div class="work__slider__item">
+                        <img src="./assets/p1s2.png" alt="">
                         <div class="work__slider__text"></div>
                     </div>
 
-                    <div class="tablet__slider__item">
-                        <img src="./image/p1s3.png" alt="">
-                        <div class="tablet__slider__text">обери сенсея</div>
+                    <div class="work__slider__item">
+                        <img src="./assets/p1s3.png" alt="">
+                        <div class="work__slider__text">обери сенсея</div>
                     </div>
 
-                    <div class="tablet__slider__item">
-                        <img src="./image/p1s4.png" alt="">
-                        <div class="tablet__slider__text"></div>
+                    <div class="work__slider__item">
+                        <img src="./assets/p1s4.png" alt="">
+                        <div class="work__slider__text"></div>
                     </div>
 
-                    <div class="tablet__slider__item">
-                        <img src="./image/p1s5.png" alt="">
-                        <div class="tablet__slider__text"></div>
+                    <div class="work__slider__item">
+                        <img src="./assets/p1s5.png" alt="">
+                        <div class="work__slider__text"></div>
                     </div>
-                </div>
-            </section>
-
-            <section class="payment">
-                <div class="container payment__container">
-                    <h2 class="payment__header">оплата та <br> передоплата послуг</h2>
-                    <div class="payment__item payment__item--one">
-                        <div class="payment__item__img"><img src="./image/p1pment1.png" alt="phone"></div>
-                        <div class="payment__item__descr">можливість оплатити за послугу через додаток в один клік - ми
-                            нагадаємо тобі ⏰</div>
-                    </div>
-
-                    <div class="payment__item payment__item--reverse">
-                        <div class="payment__item__img"><img src="./image/p1pment2.png" alt="phone"></div>
-                        <div class="payment__item__descr payment__item__descr--reverse">передоплата після бронювання,
-                            якщо
-                            цього потребує бізнес 💸</div>
-                    </div>
-
-                    <div class="payment__item">
-                        <div class="payment__item__img"><img src="./image/p1pment3.png" alt="phone"></div>
-                        <div class="payment__item__descr">додай картку та оплачуй нею за послуги через додаток 💳</div>
-                    </div>
-
-                    <div class="payment__item payment__item--reverse payment__item--right">
-                        <div class="payment__item__img payment__item__img--width"><img src="./image/p1pment4.png"
-                                alt="phone"></div>
-                        <div class="payment__item__descr payment__item__descr--reverse payment__item__descr--width">
-                            забув
-                            про оплату - ти завжди маєш можливість відкрити запис на послугу та зробити це в додатку 🗿
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section class="search">
-                <div class="container search__container">
-                    <h2 class="search__header">пошук закладів</h2>
-                    <div class="search__descr search__descr--hidden">шукай потрібні тобі заклади різноманітними
-                        способами</div>
-                    <div class="search__img search__img--width"><img src="./image/p1search1.png" alt="phone"></div>
-                    <div class="search__img"><img src="./image/p1search2.png" alt="phone"></div>
-                    <div class="search__img"><img src="./image/p1search3.png" alt="phone"></div>
-                    <div class="search__img"><img src="./image/p1search4.png" alt="phone"></div>
-                    <div class="search__descr">шукай потрібні тобі заклади різноманітними способами</div>
-                </div>
-            </section>
-
-            <section class="functions">
-                <div class="container functions__container">
-                    <h2 class="functions__header">фічі</h2>
-                    <div class="functions__item">
-                        <div class="functions__numb">1.</div>
-                        <div class="functions__img functions__img--width"><img src="./image/p1func1.png" alt="phone">
-                        </div>
-                        <div class="functions__text">ти завжди можеш переглянути профіль закладу та залишити відгук
-                            після відвідування 🙂</div>
-                    </div>
-
-                    <div class="functions__item">
-                        <div class="functions__numb">2.</div>
-                        <div class="functions__img"><img src="./image/p1func2.png" alt="phone"></div>
-                        <div class="functions__text">тепер користуватися картками лояльності та абонементами дуже просто
-                            🤗</div>
-                    </div>
-
-                    <div class="functions__item">
-                        <div class="functions__numb">3.</div>
-                        <div class="functions__img"><img src="./image/p1func3.png" alt="phone"></div>
-                        <div class="functions__text">сповіщення про вільний час, якщо все вже заброньовано 📣</div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="plan" class="plan">
-                <div class="container plan__container">
-                    <h2 class="plan__header">план розвитку</h2>
-                    <div class="plan__item">
-
-                        <div class="plan__line plan__line--dotted"></div>
-
-                        <div class="plan__round plan__round--one">
-                            <div class="plan__round plan__round--one"></div>
-                        </div>
-                        <div class="plan__line plan__line--one"></div>
-
-                        <div class="plan__round plan__round--two">
-                            <div class="plan__round plan__round--two"></div>
-                        </div>
-                        <div class="plan__line plan__line--two"></div>
-
-                        <div class="plan__round plan__round--three">
-                            <div class="plan__round plan__round--three"></div>
-                        </div>
-                        <div class="plan__line plan__line--three"></div>
-
-                        <div class="plan__round plan__round--four">
-                            <div class="plan__round plan__round--four"></div>
-                        </div>
-                        <div class="plan__line plan__line--four"></div>
-
-                    </div>
-
-                    <div class="plan__text">
-                        <div class="plan__descr">розробка <br> клієнтського додатку 🔨</div>
-                        <div class="plan__descr">розробка <br> бізнес додатку 🗿</div>
-                        <div class="plan__descr">розробка бізнес <br> додатку для браузеру 💻</div>
-                        <div class="plan__descr">реліз 🚀 🎉</div>
-                    </div>
-                </div>
-            </section>
-            <section id="end" class="communication">
-                <div class="container communication__container">
-                    <form action="" class="communication__form">
-                        <h2 class="communication__header">давайте поспілкуємось ☕️</h2>
-                        <div class="communication__text communication__text--name">привіт, мене звати <input type="text"
-                                placeholder="ваше ім'я" class="communication__input">,</div>
-                        <div class="communication__text communication__text--email">напишіть мені на <input type="email"
-                                placeholder="ваша пошта" class="communication__input">!</div>
-
-                        <button type="submit" class="communication__btn">надіслати</button>
-                    </form>
-
-                </div>
-            </section>
-
-        </div>
-        <footer class="footer">
-            <div class="container footer__container">
-                <div class="footer__logo"><img src="./image/logo.svg" alt="logo"></div>
-
-                <div class="footer__contacts">
-                    <div class="footer__link"><a href="#"><img src="./image/Mail.svg" alt=""></a></div>
-                    <div class="footer__link"><a href="#"><img src="./image/Instagram.svg" alt=""></a></div>
-                    <div class="footer__link"><a href="#"><img src="./image/Twitter.svg" alt=""></a></div>
-                    <div class="footer__link"><a href="#"><img src="./image/Vector.svg" alt=""></a></div>
-                </div>
-
-                <div class="footer__docs">
-                    <div class="footer__doc"><a href="#">політика конфіденційності</a></div>
-                    <div class="footer__doc"><a href="#">публічна оферта</a></div>
-                </div>
-
-                <div class="footer__stores">
-                    <div class="footer__store"><a href="#"><img
-                                src="./image/appstore/Store=Google Play, Style=Outline.svg" alt=""></a></div>
-                    <div class="footer__store"><a href="#"><img
-                                src="./image/appstore/Store=App Store, Style=Outline.svg" alt=""></a></div>
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class="arrow arrow--right">
+                <img src="./assets/Right Chevron.svg" alt="arrow">
+            </div>
+        </div>
+
+        <div class="wrapper-slider-tablet">
+            <div class="tablet__slider__item">
+                <img src="./assets/p1sa.png" alt="">
+                <div class="work__slider__text"></div>
+            </div>
+
+            <div class="tablet__slider__item">
+                <img src="./assets/p1s2.png" alt="">
+                <div class="work__slider__text"></div>
+            </div>
+
+            <div class="tablet__slider__item">
+                <img src="./assets/p1s3.png" alt="">
+                <div class="tablet__slider__text">обери сенсея</div>
+            </div>
+
+            <div class="tablet__slider__item">
+                <img src="./assets/p1s4.png" alt="">
+                <div class="tablet__slider__text"></div>
+            </div>
+
+            <div class="tablet__slider__item">
+                <img src="./assets/p1s5.png" alt="">
+                <div class="tablet__slider__text"></div>
+            </div>
+        </div>-->
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-container swiper-container-v1">
+                        <div class="swiper-wrapper">
+                            <div  class="swiper-slide swpheightauto">
+                                <h2 style="margin-bottom:100px;" class="payment__header">оплата та
+                                    <br> передоплата послуг
+                                </h2>
+                                <div style="margin-top:0;" class="payment__item payment__item--one">
+                                    <div class="payment__item__img">
+                                        <img width="200" src="./assets/p1pment1.png" alt="phone">
+                                    </div>
+                                    <div class="payment__item__descr">
+                                        можливість оплатити за послугу через додаток в
+                                    один клік - ми
+                                    нагадаємо тобі ⏰
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="swiper-slide swpheightauto">
+                                <div style="margin-top:0;" class="payment__item payment__item--reverse">
+                                    <div class="payment__item__img">
+                                        <img width="200" src="./assets/p1pment2.png" alt="phone">
+                                    </div>
+                                    <div class="payment__item__descr payment__item__descr--reverse">
+                                        передоплата
+                                після бронювання,
+                                якщо
+                                цього потребує бізнес 💸
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="swiper-slide swpheightauto">
+                                <div style="margin-top:0;" class="payment__item">
+                                    <div class="payment__item__img">
+                                        <img width="200" src="./assets/p1pment3.png" alt="phone">
+                                    </div>
+                                    <div class="payment__item__descr">
+                                        додай картку та оплачуй нею за послуги через
+                                додаток 💳
+                                    </div>
+                                </div>
+                            </div>
+                            <div  style="padding-bottom: 40px;" class="swiper-slide swpheightauto">
+                                <div style="margin-top:0;" class="payment__item payment__item--reverse payment__item--right">
+                                    <div class="payment__item__img payment__item__img--width">
+                                        <img width="400" src="./assets/p1pment4.png" alt="phone">
+                                    </div>
+                                    <div class="payment__item__descr payment__item__descr--reverse payment__item__descr--width">
+                                        забув
+                                про оплату - ти завжди маєш можливість відкрити запис на послугу та зробити
+                                це в додатку 🗿
+                                    </div>
+                                </div>
+                            </div>
+                            <!--            
+                        <div class="swiper-slide swpheightauto">
+                            <section class="payment">
+                                <div class="container payment__container cnt-1">
+                                    <h2 class="payment__header">оплата та <br> передоплата послуг</h2>
+                                    <div class="payment__item payment__item--one">
+                                        <div class="payment__item__img"><img src="./assets/p1pment1.png" alt="phone">
+                                        </div>
+                                        <div class="payment__item__descr">можливість оплатити за послугу через додаток в
+                                            один клік - ми
+                                            нагадаємо тобі ⏰</div>
+                                    </div>
+
+                                    <div class="payment__item payment__item--reverse">
+                                        <div class="payment__item__img"><img src="./assets/p1pment2.png" alt="phone">
+                                        </div>
+                                        <div class="payment__item__descr payment__item__descr--reverse">передоплата
+                                            після бронювання,
+                                            якщо
+                                            цього потребує бізнес 💸</div>
+                                    </div>
+
+                                    <div class="payment__item">
+                                        <div class="payment__item__img"><img src="./assets/p1pment3.png" alt="phone">
+                                        </div>
+                                        <div class="payment__item__descr">додай картку та оплачуй нею за послуги через
+                                            додаток 💳</div>
+                                    </div>
+
+                                    <div class="payment__item payment__item--reverse payment__item--right">
+                                        <div class="payment__item__img payment__item__img--width"><img
+                                                src="./assets/p1pment4.png" alt="phone"></div>
+                                        <div
+                                            class="payment__item__descr payment__item__descr--reverse payment__item__descr--width">
+                                            забув
+                                            про оплату - ти завжди маєш можливість відкрити запис на послугу та зробити
+                                            це в додатку 🗿
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                       
+                    -->
+                        </div>
+                        <div style="left:10px;" class="swiper-pagination swiper-pagination-v1"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <section style="margin-top: auto;
+                    margin-bottom: auto;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    -webkit-justify-content: center;
+                    justify-content: center;
+                    height: 100vh;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                    flex-direction: column;" class="search">
+                        <div class="container">
+                            <h2 class="work__header">пошук закладів</h2>
+                        </div>
+                        <div  class="swiper-container3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide swpnotheight">
+                                    <img style="max-width:160px;" width="190" src="./assets/p1search1.png" alt="phone">
+                                </div>
+                                <div class="swiper-slide swpnotheight">
+                                    <img width="190" src="./assets/p1search2.png" alt="phone">
+                                </div>
+                                <div class="swiper-slide swpnotheight">
+                                    <img width="190" src="./assets/p1search3.png" alt="phone">
+                                </div>
+                                <div class="swiper-slide swpnotheight">
+                                    <img width="190" src="./assets/p1search4.png" alt="phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__descr">шукай потрібні тобі заклади різноманітними способами</div>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-container swiper-container-v2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swpheightauto">
+                                <h2 class="functions__header">фічі</h2>
+                                <div class="functions__item">
+                                    <div class="functions__numb">1.</div>
+                                    <div class="functions__img functions__img--width">
+                                        <img width="380" src="./assets/p1func1.png" alt="phone">
+                                    </div>
+                                    <div class="functions__text">
+                                        ти завжди можеш переглянути профіль закладу та
+                                    залишити відгук
+                                    після відвідування 🙂
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swpheightauto">
+                                <div class="functions__item">
+                                    <div class="functions__numb">2.</div>
+                                    <div class="functions__img">
+                                        <img width="200" src="./assets/p1func2.png" alt="phone">
+                                    </div>
+                                    <div class="functions__text">
+                                        тепер користуватися картками лояльності та
+                                    абонементами дуже просто
+                                    🤗
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="padding-bottom: 40px;" class="swiper-slide swpheightauto">
+                                <div class="functions__item">
+                                    <div class="functions__numb">3.</div>
+                                    <div class="functions__img">
+                                        <img width="200" src="./assets/p1func3.png" alt="phone">
+                                    </div>
+                                    <div class="functions__text">
+                                        сповіщення про вільний час, якщо все вже
+                                    заброньовано 📣
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  <div class="swiper-slide swpheightauto">
+                            <section class="functions">
+                                <div class="container functions__container cnt-1">
+                                    <h2 class="functions__header">фічі</h2>
+                                    <div class="functions__item">
+                                        <div class="functions__numb">1.</div>
+                                        <div class="functions__img functions__img--width"><img width="380"
+                                                src="./assets/p1func1.png" alt="phone">
+                                        </div>
+                                        <div class="functions__text">ти завжди можеш переглянути профіль закладу та
+                                            залишити відгук
+                                            після відвідування 🙂</div>
+                                    </div>
+
+                                    <div class="functions__item">
+                                        <div class="functions__numb">2.</div>
+                                        <div class="functions__img"><img width="200" src="./assets/p1func2.png"
+                                                alt="phone"></div>
+                                        <div class="functions__text">тепер користуватися картками лояльності та
+                                            абонементами дуже просто
+                                            🤗</div>
+                                    </div>
+
+                                    <div class="functions__item">
+                                        <div class="functions__numb">3.</div>
+                                        <div class="functions__img"><img width="200" src="./assets/p1func3.png"
+                                                alt="phone"></div>
+                                        <div class="functions__text">сповіщення про вільний час, якщо все вже
+                                            заброньовано 📣</div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <section id="plan" class="plan">
+                        <div style="     -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        height:100vh;" class="container plan__container">
+                            <h2 style="margin-top: -75px;
+            margin-bottom: 75px;" class="plan__header">план розвитку</h2>
+                            <div class="plan__item">
+                                <div class="plan__line plan__line--dotted"></div>
+                                <div class="plan__round plan__round--one">
+                                    <div class="plan__round plan__round--one"></div>
+                                </div>
+                                <div class="plan__line plan__line--one"></div>
+                                <div class="plan__round plan__round--two">
+                                    <div class="plan__round plan__round--two"></div>
+                                </div>
+                                <div class="plan__line plan__line--two"></div>
+                                <div class="plan__round plan__round--three">
+                                    <div class="plan__round plan__round--three"></div>
+                                </div>
+                                <div class="plan__line plan__line--three"></div>
+                                <div class="plan__round plan__round--four">
+                                    <div class="plan__round plan__round--four"></div>
+                                </div>
+                                <div class="plan__line plan__line--four"></div>
+                            </div>
+                            <div class="plan__text">
+                                <div class="plan__descr">розробка
+                                    <br> клієнтського додатку 🔨
+                                </div>
+                                <div class="plan__descr">розробка
+                                    <br> бізнес додатку 🗿
+                                </div>
+                                <div class="plan__descr">розробка бізнес
+                                    <br> додатку для браузеру 💻
+                                </div>
+                                <div style="margin-right:0;" class="plan__descr">реліз 🚀 🎉</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-slide" style="-webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      height: 100vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;-webkit-box-align: flex-start;;
+-ms-flex-align: flex-start;;
+-webkit-align-items: flex-start;;
+align-items: flex-start;;">
+                    <section style="margin-top: auto;" id="end" class="communication">
+                        <div class="ommunication__container">
+
+                          
+                              
+                              
+                            <form action="" class="communication__form">
+                                <h2 class="communication__header">давайте поспілкуємось ☕️</h2>
+                                <div class="communication__text communication__text--name">привіт, мене звати
+                                    
+                                    <input type="text" placeholder="ваше ім'я" class="communication__input ">
+
+                                
+                                </div>
+
+                               
+                                <div class="communication__text communication__text--email">напишіть мені на
+                                    <input type="email" placeholder="ваша пошта" class="communication__input">
+                                </div>
+                                <button type="submit" class="communication__btn">надіслати</button>
+                            </form>
+                        </div>
+                    </section>
+                    <footer class="footer">
+                        <div class="footer__container">
+                            <div class="footer__logo">
+                                <img src="./assets/logo.svg" alt="logo">
+                            </div>
+                            <div class="footer__contacts">
+                                <div class="footer__link">
+                                    <a href="#">
+                                        <img src="./assets/Mail.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer__link">
+                                    <a href="#">
+                                        <img src="./assets/Instagram.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer__link">
+                                    <a href="#">
+                                        <img src="./assets/Twitter.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer__link">
+                                    <a href="#">
+                                        <img src="./assets/Vector.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__docs">
+                                <div class="footer__doc">
+                                    <a href="#">політика конфіденційності</a>
+                                </div>
+                                <div class="footer__doc">
+                                    <a href="#">публічна оферта</a>
+                                </div>
+                            </div>
+                            <div class="footer__stores">
+                                <div class="footer__store">
+                                    <a href="#">
+                                        <img src="./assets/appstore/Store=Google Play, Style=Outline.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer__store">
+                                    <a href="#">
+                                        <img src="./assets/appstore/Store=App Store, Style=Outline.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+             
+            </div>
+            <!--   <div class="swiper-pagination"></div> -->
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+        
 
 
-    <script src="./js/main.js"></script>
-    <script src="./js/workSlider.js"></script>
-</body>
+        <!-- Initialize Swiper -->
+        <script>
 
+
+
+
+
+
+  var element = document.getElementById("hdr1");
+  
+
+
+$(function() {
+               // var $video = $('.vdv');
+                var $window = $(window);
+                var target = 0;
+                //$video.is(":in-viewport")
+                     $window.scroll(function() {
+                        var target = $(this).scrollTop();
+console.log(target);
+                         
+                        /*  if (target > 1) {
+                              $video[0].play();
+                          } else {
+                              $video[0].pause();
+                          }*/
+                      });
+            });
+
+
+        var swiperV = new Swiper('.swiper-container0', {
+            direction: 'vertical',
+     // spaceBetween: 50,
+     mousewheel: true,
+     resistanceRatio:5,
+    speed:900,
+      nested:true,
+      allowTouchMove:false,
+        });
+
+        swiperV.on('scroll', function() {
+            if(swiperV.realIndex > 0) element.classList.add("mystyle");
+            else element.classList.remove("mystyle");
+        });
+        swiperV.on('transitionEnd', function() {
+ 
+  //console.log('Главный СЛАДЙЕР', swiperV.realIndex);
+
+
+
+  if(swiperV.realIndex == 2) 
+  setTimeout(sayHi, 40);
+  else  swiperV1.mousewheel.disable();
+
+
+  if(swiperV.realIndex == 4) 
+  setTimeout(sayHi1, 40);
+  else  swiperV2.mousewheel.disable();
+});
+
+function sayHi() {
+  swiperV1.mousewheel.enable();
+}
+function sayHi1() {
+  swiperV2.mousewheel.enable();
+}
+var swiperV1 = new Swiper('.swiper-container-v1', {
+
+    direction: 'vertical',
+     freeMode: true,
+      mousewheel: false,
+      slidesPerView: "auto",
+    nested:true,
+      allowTouchMove:false,
+     // initialSlide : 0,
+     // speed:600,
+      //spaceBetween: 50,
+});
+
+swiperV.on('transitionEnd', function() {
+
+if(swiperV1.realIndex < 3 && swiperV.realIndex == 2) swiperV.mousewheel.disable();
+
+if(swiperV2.realIndex < 2 && swiperV.realIndex == 4) swiperV.mousewheel.disable();
+
+
+    //console.log('VTPR', swiperV1.realIndex);
+
+  });
+  swiperV1.on('scroll', function() {
+  
+
+
+ if(swiperV1.realIndex == 0) swiperV.mousewheel.enable();
+  else if(swiperV1.realIndex >= 2) swiperV.mousewheel.enable();
+  else swiperV.mousewheel.disable();
+
+
+
+  
+//console.log('ВТОРОСТЕПЕННЫЙ СЛАЙДЕР', swiperV1.realIndex);
+});
+
+
+var swiperV2 = new Swiper('.swiper-container-v2', {
+nested: true,
+direction: 'vertical',
+slidesPerView: 'auto',
+freeMode: true,
+allowTouchMove: false,
+scrollbar: {
+    el: '.swiper-scrollbar',
+},
+mousewheel: false,
+});
+swiperV2.on('scroll', function() {
+  
+
+
+if(swiperV2.realIndex == 0) swiperV.mousewheel.enable();
+else if(swiperV2.realIndex >= 1) swiperV.mousewheel.enable();
+else swiperV.mousewheel.disable();
+
+
+
+//console.log('ВТОРОСТЕПЕННЫЙ СЛАЙДЕР', swiperV2.realIndex);
+});
+
+
+
+
+
+var swiper1 = new Swiper('.swiper-container1', {
+            paginationClickable: true,
+            centeredSlides: true,
+            slidesPerView: 5,
+            nested: true,
+            spaceBetween: 5,
+            loop: true,
+        
+            paginationClickable: true,
+            grabCursor: true,
+
+            speed: 500,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+          
+        });
+
+        var swiper1 = new Swiper('.swiper-container3', {
+
+            slidesPerView: 4,
+            nested: true,
+            spaceBetween: 5,
+
+
+            speed: 500,
+
+
+        });
+        </script>
+    </body>
 </html>

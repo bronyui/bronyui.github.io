@@ -1115,7 +1115,7 @@ border-radius: 0px;
     font-weight: 700;
     font-size: 38px;
     line-height: 38.61px;
-    margin-top: 20px;
+    margin-top: 0px;
     }
     .swiper-slide p {
       font-size: 15px;
@@ -1124,7 +1124,7 @@ border-radius: 0px;
       .swiper-container1 {
         width:100%;
         margin-top: 0;
-        background-color:red;
+        background-color:green;
         padding-top: 30px !important;
  padding-bottom: 0px !important; 
 

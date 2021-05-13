@@ -1067,7 +1067,7 @@ textarea:focus, input:focus {
     grid-area: left;
     width: auto;
     position: absolute;
-    bottom: -50%;
+    bottom: -70%;
     left: 0;
     width: 100%;
   }

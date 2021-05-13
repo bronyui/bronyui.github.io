@@ -1057,12 +1057,9 @@ textarea:focus, input:focus {
     max-width: 90px;
   }
   .promo--right {
-    /* width: 100%; */
+  
     height: auto;
-    /* background: url(../assets/promo1.png) center center/cover no-repeat; */
-    /* grid-area: left; */
-    
-    display: flex;
+ display: flex;
     /* top: 100px; */
     justify-content: center;
     align-items: start;
@@ -1073,8 +1070,6 @@ textarea:focus, input:focus {
     bottom: -50%;
     left: 0;
     width: 100%;
-    /* margin-left: 7.5%; */
-    /* margin-right: 7.5%; */
   }
   .promo--right img {
     position: relative;

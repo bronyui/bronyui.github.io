@@ -619,11 +619,11 @@ console.log(target);
 
         var swiperV = new Swiper('.swiper-container0', {
             direction: 'vertical',
-     mousewheel: true,
-     resistanceRatio:5,
+    // mousewheel: true,
+ 
     speed:900,
-      nested:true,
-      allowTouchMove:false,
+    
+ 
       breakpoints: {
     320: {
         grabCursor: true,
@@ -641,9 +641,17 @@ console.log(target);
             if(swiperV.realIndex > 0 /*&& window.innerWidth > 600*/) element.classList.add("mystyle");
             else element.classList.remove("mystyle");
         });
+
+        swiperV.on('slideChange', function() {
+            if(swiperV.realIndex > 0 /*&& window.innerWidth > 600*/) element.classList.add("mystyle");
+            else element.classList.remove("mystyle");
+        });
+
+
+        
         swiperV.on('transitionEnd', function() {
  
-            if(swiperV.realIndex > 0 /*&& window.innerWidth > 600*/) element.classList.add("mystyle");
+            if(swiperV.realIndex > 0) element.classList.add("mystyle");
             else element.classList.remove("mystyle");
 
 
@@ -667,10 +675,10 @@ var swiperV1 = new Swiper('.swiper-container-v1', {
 
     direction: 'vertical',
      freeMode: true,
-      mousewheel: false,
+     // mousewheel: false,
       slidesPerView: "auto",
     nested:true,
-      allowTouchMove:false,
+     // allowTouchMove:false,
      // initialSlide : 0,
      // speed:600,
       //spaceBetween: 50,

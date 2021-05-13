@@ -1142,4 +1142,38 @@ margin-top: 30px;
         transform: scale(0.9);
         }
 
+
+
+
+        .payment__item {
+    
+          flex-direction: column;
+      }
+      .payment__item__img img {
+        width: 100%;
+        position: relative;
+        height: auto;
+      }
+        .payment__header {
+        
+   
+            font-size: 38px;
+            line-height: 38.61px;
+            margin-top: 25px;
+            margin-bottom: 60px !important;
+        
+      }
+
+      .payment__item__descr {
+
+        font-size: 17px;
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 85px;
+        display: inline-block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }

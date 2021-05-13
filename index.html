@@ -46,18 +46,10 @@
                             <div class="promo--left">
                                 <h1 class="promo__header">спростіть своє життя</h1>
                                 <span style="float:left; display:flex;"><a href="#plan" class="promo__link">план розвитку</a><a style="margin-top: auto;
-                                    margin-bottom: auto;
-                                    padding-top: 35px;">🚀</a></span>
+                                    margin-bottom: auto;">🚀</a></span>
                             </div>
                             <div class="promo--right">
-                                <img style="top: 50%;
-                margin-top: -500px;
-                position: absolute;
-                right: 30%;
-                margin-right: -500px;
-                height: 1000px;
-                width: 1000px;
-                border-radius: 0px;" src="assets/Gradient.png">
+                                <img class="img-promo-gradient"  src="assets/Gradient.png">
                                 <img style="
                 position: relative;
                " width="300" src="assets/Group 19.png">
@@ -633,6 +625,13 @@ console.log(target);
     speed:900,
       nested:true,
       allowTouchMove:false,
+      breakpoints: {
+    // when window width is >= 320px
+    320: {
+        grabCursor: true,
+        allowTouchMove:true,
+    }}
+
         });
 
         swiperV.on('scroll', function() {
@@ -743,6 +742,13 @@ var swiper1 = new Swiper('.swiper-container1', {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+
+            breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1.9,
+      spaceBetween: 10,
+    }}
           
         });
 

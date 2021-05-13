@@ -1139,9 +1139,7 @@ margin-top: 30px;
         }
 
       .swiper-container1 .swiper-slide-active {
-        /* padding-top: 40px; */
         transform: scale(0.9);
-        /* max-height: 0px; */
         }
 
 }

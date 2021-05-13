@@ -1124,9 +1124,12 @@ border-radius: 0px;
       .swiper-container1 {
         width:100%;
         margin-top: 0;
-        background-color:green;
+
         padding-top: 30px !important;
  padding-bottom: 0px !important; 
+ width: 100%;
+margin-bottom: 30px;
+margin-top: 0;
 
       }
 

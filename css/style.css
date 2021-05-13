@@ -1124,6 +1124,7 @@ border-radius: 0px;
       .swiper-container1 {
         width:100%;
         margin-top: 35px;
+        background-color:red;
       }
 
       .swiper-button-prev, .swiper-button-next, .mystyle{

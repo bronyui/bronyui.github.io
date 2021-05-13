@@ -1045,7 +1045,7 @@ textarea:focus, input:focus {
     display: flex;
     min-width: 219px;
     align-items: center;
-    margin-top: -300px;
+    margin-top: 0px;
   }
   .promo__link {
     font-size: 22px;

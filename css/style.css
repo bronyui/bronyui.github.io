@@ -1070,7 +1070,7 @@ textarea:focus, input:focus {
     grid-area: left;
     width: auto;
     position: absolute;
-    bottom: -70%;
+    bottom: -80%;
     left: 0;
     width: 100%;
     /* margin-left: 7.5%; */

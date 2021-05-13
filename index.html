@@ -644,7 +644,8 @@ console.log(target);
         });
         swiperV.on('transitionEnd', function() {
  
-
+            if(swiperV.realIndex > 0 /*&& window.innerWidth > 600*/) element.classList.add("mystyle");
+            else element.classList.remove("mystyle");
 
 
   if(swiperV.realIndex == 2) 

@@ -1061,7 +1061,7 @@ textarea:focus, input:focus {
     height: auto;
     /* background: url(../assets/promo1.png) center center/cover no-repeat; */
     /* grid-area: left; */
-    margin-top: 160px;
+    
     display: flex;
     /* top: 100px; */
     justify-content: center;
@@ -1070,7 +1070,7 @@ textarea:focus, input:focus {
     grid-area: left;
     width: auto;
     position: absolute;
-    bottom: -40%;
+    bottom: -50%;
     left: 0;
     width: 100%;
     /* margin-left: 7.5%; */

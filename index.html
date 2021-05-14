@@ -392,9 +392,18 @@ border-radius: 0px;
         -webkit-justify-content: center;
         justify-content: center;
 
-        height:100%;" class="container plan__container">
-                            <h2 style="
-            margin-bottom: 75px;" class="plan__header">план розвитку</h2>
+        height:auto; width:100%;" class="container plan__container">
+   <h2 style="
+   margin-bottom: 75px;" class="plan__header">план розвитку</h2>
+
+<div class="swiper-container swiper-containerLine">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide swpnotheight wdth1000">
+         
+
+
+
+                         
                             <div class="plan__item">
                                 <div class="plan__line plan__line--dotted"></div>
                                 <div class="plan__line plan__line--one"></div>
@@ -450,6 +459,10 @@ border-radius: 0px;
                                     реліз 🚀 🎉
                                 </div>
                             </div>
+                        </div>
+                    
+                    </div>
+                </div>
                         </div>
                     </section>
                 </div>
@@ -753,6 +766,26 @@ var swiper1 = new Swiper('.swiper-container1', {
 }
 }
         });
+
+
+        var swiperLine = new Swiper('.swiper-containerLine', {
+nested: true,
+spaceBetween: 25,
+freeMode:true,
+
+direction: "horizontal",
+        slidesPerView: "auto",
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        mousewheel: true,
+speed: 500,
+
+
+});
+
+
+
         </script>
     </body>
 </html>

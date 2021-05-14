@@ -333,10 +333,11 @@ border-radius: 0px;
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide swpnotheight">
                                     <img
-                                        style="max-width:160px;"
+                                      
                                         width="190"
                                         src="./assets/p1search1.png"
                                         alt="phone"
+                                        class="small-big-imag"
                                     >
                                 </div>
                                 <div class="swiper-slide swpnotheight">
@@ -796,7 +797,17 @@ var swiper1 = new Swiper('.swiper-container1', {
 
             speed: 500,
 
+            breakpoints: {
 
+320: {
+  slidesPerView: 2,
+}
+,
+980: {
+    slidesPerView: 4,
+    spaceBetween: 5,
+}
+}
         });
         </script>
     </body>

@@ -116,7 +116,9 @@ body {
   justify-content: center;
   align-self: center;
 }
-
+.small-big-imag {
+max-width:160px;
+}
 #container>div {
   width: 50%;
   height: 100vh;
@@ -1149,9 +1151,24 @@ margin-top: 30px;
       }
       .payment__item__img img {
         width: 100%;
+        max-width: 200px;
         position: relative;
         height: auto;
-      }
+    }
+
+    .payment__item__img img:last-child {
+      width: 100%;
+      max-width: auto;
+      position: relative;
+      height: auto;
+  }
+  .swpheightauto:last-child .payment__item .payment__item__img img {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    height: auto;
+  }
+      
         .payment__header {
         
    
@@ -1174,4 +1191,15 @@ margin-top: 30px;
         margin-right: auto;
     }
 
+    .search__descr {
+      font-size: 17px;
+  }
+
+  .swiper-container3 {
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.small-big-imag {
+  max-width:130px !important;
+  }
 }

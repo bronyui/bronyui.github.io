@@ -634,12 +634,12 @@ console.log(target);
         });
 
         swiperV.on('scroll', function() {
-            if(swiperV.realIndex > 0 /*&& window.innerWidth > 600*/) element.classList.add("mystyle");
+            if(swiperV.realIndex > 0 ) element.classList.add("mystyle");
             else element.classList.remove("mystyle");
         });
 
         swiperV.on('slideChange', function() {
-            if(swiperV.realIndex > 0 /*&& window.innerWidth > 600*/) element.classList.add("mystyle");
+            if(swiperV.realIndex > 0) element.classList.add("mystyle");
             else element.classList.remove("mystyle");
         });
 

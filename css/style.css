@@ -44,16 +44,15 @@ html, body {
   position: relative;
   height: 100%;
   font-family: Inter;
-  background: pink;
+  background:brown;
 }
 body {
-  background: #eee;
   font-family: Inter;
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
-  background:pink;
+  
 }
 .search {
  margin-top: auto;

@@ -48,7 +48,7 @@ html, body {
   position: relative;
   height: 100%;
   font-family: Inter;
-  background: red;
+  background: green;
 }
 body {
   background: #eee;
@@ -57,7 +57,7 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
-  background: red;
+  background: green;
 }
 
 .swiper-container {
@@ -1201,6 +1201,6 @@ margin-top: 30px;
     margin-bottom: 30px;
 }
 .small-big-imag {
-  max-width:160px !important;
+  max-width:125px !important;
   }
 }

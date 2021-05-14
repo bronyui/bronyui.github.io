@@ -608,14 +608,18 @@ $(function() {
                         var target = $(this).scrollTop();
 console.log(target);
                          
-                    
+                        /*  if (target > 1) {
+                              $video[0].play();
+                          } else {
+                              $video[0].pause();
+                          }*/
                       });
             });
 
 
         var swiperV = new Swiper('.swiper-container0', {
             direction: 'vertical',
-    // mousewheel: true,
+    
  
     speed:900,
     
@@ -628,6 +632,7 @@ console.log(target);
     980: {
         grabCursor: false,
         allowTouchMove:false,
+        mousewheel: true,
     }
 }
 
@@ -671,10 +676,10 @@ var swiperV1 = new Swiper('.swiper-container-v1', {
 
     direction: 'vertical',
      freeMode: true,
-     // mousewheel: false,
+      mousewheel: false,
       slidesPerView: "auto",
     nested:true,
-     // allowTouchMove:false,
+      allowTouchMove:false,
      // initialSlide : 0,
      // speed:600,
       //spaceBetween: 50,

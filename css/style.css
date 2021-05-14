@@ -1068,11 +1068,6 @@ textarea:focus, input:focus {
     position: absolute;
     margin-left: 0;
     left: 0;
-    /* margin-right: auto; */
-    /* bottom: -70%; */
-    /* margin-left: auto; */
-    /* margin-top: auto; */
-
   }
   .promo--right img {
     position: relative;

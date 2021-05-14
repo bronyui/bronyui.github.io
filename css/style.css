@@ -63,7 +63,7 @@ body {
                     -webkit-justify-content: center;
                     justify-content: center;
               
-                    height: 100vh;
+                
                     display: -webkit-box;
                     display: -ms-flexbox;
                     display: flex;
@@ -71,7 +71,7 @@ body {
                     -webkit-box-direction: normal;
                     -ms-flex-direction: column;
                     flex-direction: column;
-                    display: -webkit-flex; /* NEW */
+                height:100%;
                     display: flex;
                   
 }

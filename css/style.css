@@ -1042,11 +1042,9 @@ textarea:focus, input:focus {
 
 .team__slider__text {
   text-align: right;
-  /* margin-top: -100px; */
   position: absolute;
   bottom: 30px;
   right: 0;
-  /* top: 90%; */
 }
 .swiper-containerLine {
   padding-top:9px !important;

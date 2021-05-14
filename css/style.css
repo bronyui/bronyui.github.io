@@ -30,9 +30,7 @@
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/inter-v3-cyrillic-700.eot");
-  /* IE9 Compat Modes */
   src: local(""), url("../fonts/inter-v3-cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v3-cyrillic-700.woff2") format("woff2"), url("../fonts/inter-v3-cyrillic-700.woff") format("woff"), url("../fonts/inter-v3-cyrillic-700.ttf") format("truetype"), url("../fonts/inter-v3-cyrillic-700.svg#Inter") format("svg");
-  /* Legacy iOS */
 }
 
 * {

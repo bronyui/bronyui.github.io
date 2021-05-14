@@ -615,8 +615,7 @@ console.log(target);
 
         var swiperV = new Swiper('.swiper-container0', {
             direction: 'vertical',
-    
- 
+            mousewheel: true,
     speed:900,
     
  
@@ -628,7 +627,7 @@ console.log(target);
     980: {
         grabCursor: false,
         allowTouchMove:false,
-        mousewheel: true,
+       
     }
 }
 
@@ -669,16 +668,23 @@ function sayHi1() {
   swiperV2.mousewheel.enable();
 }
 var swiperV1 = new Swiper('.swiper-container-v1', {
-
     direction: 'vertical',
+    slidesPerView: "auto",
      freeMode: true,
-      mousewheel: false,
-      slidesPerView: "auto",
-    nested:true,
-      allowTouchMove:false,
-     // initialSlide : 0,
-     // speed:600,
-      //spaceBetween: 50,
+     nested:true,
+
+   /*   breakpoints: {
+    320: {
+        mousewheel: false,
+    
+
+      allowTouchMove:true,
+    },
+    980: {
+        mousewheel: true,
+      allowTouchMove:true,
+    }
+}*/
 });
 
 swiperV.on('transitionEnd', function() {

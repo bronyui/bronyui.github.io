@@ -1051,7 +1051,6 @@ textarea:focus, input:focus {
     font-size: 22px;
     font-size: 22px;
     line-height: 38px;
-    /* display: block; */
   }
   .menu-list__item a img {
     max-width: 90px;

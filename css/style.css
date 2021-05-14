@@ -1018,6 +1018,12 @@ textarea:focus, input:focus {
 }
 
 @media (max-width: 600px) {
+
+
+  .small-big-imag {
+    max-width:180px !important;
+    }
+
   .promo__header {
     color: #000;
     font-weight: 700;
@@ -1179,7 +1185,5 @@ margin-top: 30px;
     margin-top: 45px;
     margin-bottom: 30px;
 }
-.small-big-imag {
-  max-width:125px !important;
-  }
+
 }

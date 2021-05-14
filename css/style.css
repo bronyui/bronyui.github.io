@@ -1057,19 +1057,23 @@ textarea:focus, input:focus {
     max-width: 90px;
   }
   .promo--right {
-  
     height: auto;
- display: flex;
-    /* top: 100px; */
+    display: flex;
+    bottom: 0;
+    margin-bottom: -80%;
     justify-content: center;
     align-items: start;
     flex-direction: column;
     grid-area: left;
     width: auto;
     position: absolute;
-    bottom: -70%;
+    margin-left: 0;
     left: 0;
-    width: 100%;
+    /* margin-right: auto; */
+    /* bottom: -70%; */
+    /* margin-left: auto; */
+    /* margin-top: auto; */
+
   }
   .promo--right img {
     position: relative;

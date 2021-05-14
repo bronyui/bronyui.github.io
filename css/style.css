@@ -96,9 +96,7 @@ body {
   justify-content: center;
   align-self: center;
 }
-.small-big-imag {
-max-width:160px;
-}
+
 #container>div {
   width: 50%;
   height: 100vh;
@@ -1020,9 +1018,6 @@ textarea:focus, input:focus {
 @media (max-width: 600px) {
 
 
-  .small-big-imag {
-    max-width:180px !important;
-    }
 
   .promo__header {
     color: #000;
@@ -1182,8 +1177,8 @@ margin-top: 30px;
   }
 
   .swiper-container3 {
-    margin-top: 45px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 }

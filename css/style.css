@@ -48,7 +48,7 @@ html, body {
   position: relative;
   height: 100%;
   font-family: Inter;
-  background: green;
+  background: red;
 }
 body {
   background: #eee;
@@ -57,7 +57,7 @@ body {
   color: #000;
   margin: 0;
   padding: 0;
-  background: green;
+  background: red;
 }
 .swiper-container {
   width: 100%;

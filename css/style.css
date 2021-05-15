@@ -42,7 +42,7 @@ html, body {
   position: relative;
   height: 100%;
   font-family: Inter;
-  background:gold;
+  background:blanchedalmond;
 }
 body {
   font-family: Inter;
@@ -1090,7 +1090,7 @@ textarea:focus, input:focus {
   }
   .communication__text input {
     width: calc(100%);
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 24px;
   }
   .footer__docs {
@@ -1141,16 +1141,18 @@ margin-top:25px;
 }
   .communication__header {
 
-    font-size: 38px;
+    font-size: 30px;
     line-height: 38.61px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 .communication__text {
   font-size:24px;
+  margin-top:25px;
 }
 .communication__btn {
 
 font-size:22px;
+
 }
   .promo__header {
     color: #000;
@@ -1369,5 +1371,12 @@ margin-top: 30px;
   margin-top: 30px;
   position: relative;
   text-align: center;
+}
+
+.footer {
+  margin-top: 15px;
+}
+.footer__link {
+  margin-left: 12px;
 }
 }

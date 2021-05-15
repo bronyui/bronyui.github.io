@@ -600,14 +600,14 @@ console.log(target);
             direction: 'vertical',
             mousewheel: true,
     speed:900,
-    
+    spaceBetween: 0,
  
       breakpoints: {
     320: {
         grabCursor: true,
         allowTouchMove:true,
     },
-    980: {
+    1025: {
         grabCursor: false,
         allowTouchMove:false,
        
@@ -733,11 +733,16 @@ var swiper1 = new Swiper('.swiper-container1', {
 
             breakpoints: {
 
-    320: {
+    100: {
       slidesPerView: 1.9,
     }
     ,
-    980: {
+    665: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+       
+    },
+    1025: {
         slidesPerView: 5,
         spaceBetween: 10,
     }
@@ -760,7 +765,7 @@ var swiper1 = new Swiper('.swiper-container1', {
   slidesPerView: 2,
 }
 ,
-980: {
+1025: {
     slidesPerView: 4,
     spaceBetween: 5,
 }

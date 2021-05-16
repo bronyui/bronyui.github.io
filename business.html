@@ -622,9 +622,6 @@ var swiperV1 = new Swiper('.swiper-container-v1', {
     slidesPerView: "auto",
      freeMode: true,
      nested:true,
-     // initialSlide : 0,
-     // speed:600,
-      //spaceBetween: 50,
 });
 
 swiperV.on('transitionEnd', function() {
@@ -653,14 +650,10 @@ if(swiperV1.realIndex < 3 && swiperV.realIndex == 3) swiperV.mousewheel.disable(
 
 
 var swiperV2 = new Swiper('.swiper-container-v2', {
-    nested: true,
-direction: 'vertical',
-slidesPerView: 'auto',
-freeMode: true,
-scrollbar: {
-    el: '.swiper-scrollbar',
-},
-mousewheel: false,
+    direction: 'vertical',
+    slidesPerView: "auto",
+     freeMode: true,
+     nested:true,
 });
 swiperV2.on('scroll', function() {
   

@@ -42,7 +42,7 @@ html, body {
   position: relative;
   height: 100%;
   font-family: Inter;
-  background:red;
+  background:green;
 }
 body {
   font-family: Inter;
@@ -1379,4 +1379,63 @@ margin-top: 30px;
 .footer__link {
   margin-left: 12px;
 }
+
+
+
+
+
+.prm-right-bussines {
+  height: auto;
+  display: flex;
+  bottom: 0;
+  margin-bottom: -50%;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  grid-area: left;
+  width: auto;
+  position: absolute;
+  margin-left: 0;
+  left: 0;
 }
+
+
+.prm-right-bussines img {
+  position: relative;
+  width: 140%;
+  max-width: 1060px;
+  margin-left:-10%;
+  /* margin-left: -10%; */
+  /* margin-right: 10%; */
+}
+
+.prm-right-bussines-img {
+position: absolute !important;
+    /* right: 30%; */
+    margin-right: 0;
+    height: 1000px !important;
+    width: 1000px !important;
+    max-width: 1000px !important;
+    top: 50%;
+    margin-left: -10%;
+    margin-top: -100%;
+    /* margin-bottom: 55% !important; */
+    left: -80% !important;
+    border-radius: 0px;
+}
+.pii-business img {
+  max-width:350px;
+}
+.hdr-bus-zero {
+  margin-bottom:0;
+}
+.itm-slamm-business {
+margin-top:40px;
+}
+.width-txt-payment {
+  width:100% !important;
+
+}
+}
+
+

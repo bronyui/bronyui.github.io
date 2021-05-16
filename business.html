@@ -62,15 +62,8 @@ line-height: 24px;
                                     margin-bottom: auto;
                                     padding-top: 35px;">💸</a></span>
                             </div>
-                            <div class="promo--right">
-                                <img style="top: 50%;
-                margin-top: -500px;
-                position: absolute;
-                right: 30%;
-                margin-right: -500px;
-                height: 1000px;
-                width: 1000px;
-                border-radius: 0px;" src="assets/Gradient-bs.png">
+                            <div class="promo--right prm-right-bussines">
+                                <img class="img-promo-gradient prm-right-bussines-img" src="assets/Gradient-bs.png">
                                 <img style="
                 position: relative;
                " width="500" src="assets/group-bs.png">
@@ -121,14 +114,14 @@ border-radius: 0px;
                     -webkit-box-direction: normal;
                     -ms-flex-direction: column;
                     flex-direction: column;" class="work">
-                        <h2 style="margin-top:20px;" class="payment__header">
+                        <h2 style="margin-top:20px;" class="payment__header hdr-bus-zero">
                             розклад на день
                         </h2>
-                        <div class="payment__item payment__item--reverse">
-                            <div class="payment__item__img">
+                        <div class="payment__item payment__item--reverse itm-slamm-business">
+                            <div class="payment__item__img pii-business">
                                 <img width="400" src="./assets/Group 75.png" alt="phone">
                             </div>
-                            <div style="width:59vh; margin-left:0; margin-right:auto;" class="payment__item__descr payment__item__descr--reverse">
+                            <div style="width:59vh; margin-left:0; margin-right:auto;" class="payment__item__descr payment__item__descr--reverse width-txt-payment">
                                 слідкуй за своїм розкладом прямо у додатку в режимі реального часу 🐥
                             </div>
                         </div>
@@ -682,7 +675,7 @@ else swiperV.mousewheel.disable();
 
 
 var swiper1 = new Swiper('.swiper-container1', {
-            paginationClickable: true,
+    paginationClickable: true,
             centeredSlides: true,
             slidesPerView: 5,
             nested: true,
@@ -697,11 +690,27 @@ var swiper1 = new Swiper('.swiper-container1', {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+
+            breakpoints: {
+
+    100: {
+      slidesPerView: 1.9,
+    }
+    ,
+    665: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+       
+    },
+    1025: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+    }
+}
           
         });
 
         var swiper1 = new Swiper('.swiper-container3', {
-
             slidesPerView: 4,
             nested: true,
             spaceBetween: 5,
@@ -709,7 +718,17 @@ var swiper1 = new Swiper('.swiper-container1', {
 
             speed: 500,
 
+            breakpoints: {
 
+320: {
+  slidesPerView: 2,
+}
+,
+1025: {
+    slidesPerView: 4,
+    spaceBetween: 5,
+}
+}
         });
         </script>
     </body>

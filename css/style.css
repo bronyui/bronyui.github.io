@@ -42,7 +42,7 @@ html, body {
   position: relative;
   height: 100%;
   font-family: Inter;
-  background:red;
+  background:green;
 }
 body {
   font-family: Inter;
@@ -906,6 +906,7 @@ textarea:focus, input:focus {
 
 .price__item {
   margin: 5vw 9.03vw 0 0;
+  margin-top:35px;
 }
 
 .price__item__header {
@@ -1439,6 +1440,10 @@ position: absolute !important;
 }
 .pii-business img {
   max-width:350px;
+  width:80% !important;
+  left:10%;
+  margin-top: 20px;
+
 }
 .hdr-bus-zero {
   margin-bottom:0 !important;
@@ -1571,6 +1576,13 @@ margin-top: 10px;
 .price__app__price {
   margin-top: 10px;
   font-size:14px;
+}
+
+.price__item {
+  margin: 5vw 9.03vw 0 0;
+}
+.wdth340pximage {
+  max-width:340px !important;
 }
 }
 

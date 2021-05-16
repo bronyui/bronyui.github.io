@@ -42,7 +42,7 @@ html, body {
   position: relative;
   height: 100%;
   font-family: Inter;
-  background:green;
+  background:white;
 }
 body {
   font-family: Inter;
@@ -1068,7 +1068,13 @@ textarea:focus, input:focus {
   margin-left: -500px;
 }
 
+.dsplnone {
+  display:none;
+}
 @media (max-width: 980px) {
+  .dsplnone {
+display:block;
+  }
 .plan__text, .plan__item, .wdth1000 {
   width:1000px !important;
 }
@@ -1096,6 +1102,8 @@ textarea:focus, input:focus {
 @media (max-width: 600px) {
   .plan__header {
     font-size: 38px;
+    margin-top:0 !important;
+    padding-top:0;
     line-height: 38.61px;
   }
   .communication__text input {

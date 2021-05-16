@@ -25,16 +25,16 @@
                                 </a>
                             </li>
                             <li class="menu-list__item ">
-                                <a href="./pages/business.html">для бізнесу</a>
+                                <a href="./business.html">для бізнесу</a>
                             </li>
                             <li class="menu-list__item ">
-                                <a style="color:black;" href="./pages/about_us.html">про нас</a>
+                                <a style="color:black;" href="./about.html">про нас</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header--right">
-                    <a href="#end" class="btn ab-clr">поспілкуємось?</a>
+                    <a  class="btn ab-clr">поспілкуємось?</a>
                 </div>
             </div>
         </header>
@@ -44,10 +44,10 @@
                     <section class="promo">
                         <div class="container promo__container">
                             <div class="promo--left wdt100">
-                                <span style="float:left; display:flex;"><h1 style="margin-top:auto;margin-bottom:auto;line-height: 72px; font-size:85px;" class="promo__header">привіт, люди</h1><!--<a style="margin-top: auto;
+                                <span style="float:left; display:flex;"><h1 class="promo__header hdr-about">привіт, люди</h1><!--<a style="margin-top: auto;
                                 margin-bottom: auto;
                                 padding-top: 15px;font-size:55px;line-height: 72px;">💸</a> --><img src="assets/5.svg" /></span>
-                                <span style="float:left; display:flex; margin-top:100px"><p class="ab-under-txt">давайте знайомитись з нами та нашою командою!
+                                <span class="twolable-span" ><p class="ab-under-txt">давайте знайомитись з нами та нашою командою!
                                 </p> </span>
                             </div>
                           <!--     <div class="promo--right">
@@ -137,7 +137,7 @@ border-radius: 0px;
                     -ms-flex-direction: column;
                     flex-direction: column;" class="work">
                         <div class="container">
-                            <h2 class="work__header">наша команда 🐈</h2>
+                            <h2 class="work__header hdrsizeabout">наша команда 🐈</h2>
                           
                         </div>
                         <div style="position:relative;">
@@ -317,181 +317,59 @@ align-items: flex-start;;">
                         </div>
                     </footer>
                 </div>
-             
             </div>
-            <!--   <div class="swiper-pagination"></div> -->
         </div>
-        <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
-        
-
-
-
-        <!-- Initialize Swiper -->
         <script>
-
-
-
-
-
-
-  var element = document.getElementById("hdr1");
-  
-
-
-$(function() {
-               // var $video = $('.vdv');
-                var $window = $(window);
-                var target = 0;
-                //$video.is(":in-viewport")
-                     $window.scroll(function() {
-                        var target = $(this).scrollTop();
-console.log(target);
-                         
-                        /*  if (target > 1) {
-                              $video[0].play();
-                          } else {
-                              $video[0].pause();
-                          }*/
-                      });
-            });
-
-
-        var swiperV = new Swiper('.swiper-container0', {
-            direction: 'vertical',
-     // spaceBetween: 50,
-     mousewheel: true,
-     resistanceRatio:5,
+    var element = document.getElementById("hdr1");
+    var swiperV = new Swiper('.swiper-container0', {
+    direction: 'vertical',
+    mousewheel: true,
     speed:900,
-      nested:true,
-      allowTouchMove:false,
-        });
-
+    spaceBetween: 0,
+      breakpoints: {
+    320: {
+        grabCursor: true,
+        allowTouchMove:true,
+    },
+    1025: {
+        grabCursor: false,
+        allowTouchMove:false,
+    }}});
         swiperV.on('scroll', function() {
             if(swiperV.realIndex > 0) element.classList.add("mystyle");
             else element.classList.remove("mystyle");
         });
-    /*    swiperV.on('transitionEnd', function() {
- 
-  //console.log('Главный СЛАДЙЕР', swiperV.realIndex);
+        swiperV.on('slideChange', function() {
+            if(swiperV.realIndex > 0) element.classList.add("mystyle");
+            else element.classList.remove("mystyle");
+        });
 
-
-
-  if(swiperV.realIndex == 2) 
-  setTimeout(sayHi, 40);
-  else  swiperV1.mousewheel.disable();
-
-
-  if(swiperV.realIndex == 4) 
-  setTimeout(sayHi1, 40);
-  else  swiperV2.mousewheel.disable();
-});*/
-/*
-function sayHi() {
-  swiperV1.mousewheel.enable();
-}
-function sayHi1() {
-  swiperV2.mousewheel.enable();
-}*/
-var swiperV1 = new Swiper('.swiper-container-v1', {
-
-    direction: 'vertical',
-     freeMode: true,
-      mousewheel: false,
-      slidesPerView: "auto",
-      nested:true,
-      allowTouchMove:false,
-     // initialSlide : 0,
-     // speed:600,
-      //spaceBetween: 50,
-});
-
-/*swiperV.on('transitionEnd', function() {
-
-if(swiperV1.realIndex < 3 && swiperV.realIndex == 2) swiperV.mousewheel.disable();
-
-if(swiperV2.realIndex < 2 && swiperV.realIndex == 4) swiperV.mousewheel.disable();
-
-
-    //console.log('VTPR', swiperV1.realIndex);
-
-  });*/
-  /*swiperV1.on('scroll', function() {
-  
-
-
- if(swiperV1.realIndex == 0) swiperV.mousewheel.enable();
-  else if(swiperV1.realIndex >= 2) swiperV.mousewheel.enable();
-  else swiperV.mousewheel.disable();
-
-
-
-  
-//console.log('ВТОРОСТЕПЕННЫЙ СЛАЙДЕР', swiperV1.realIndex);
-});*/
-
-
-var swiperV2 = new Swiper('.swiper-container-v2', {
-nested: true,
-direction: 'vertical',
-slidesPerView: 'auto',
-freeMode: true,
-speed: 1200,
-allowTouchMove: false,
-scrollbar: {
-    el: '.swiper-scrollbar',
-},
-mousewheel: false,
-});
-/*
-swiperV2.on('scroll', function() {
-  
-
-
-if(swiperV2.realIndex == 0) swiperV.mousewheel.enable();
-else if(swiperV2.realIndex >= 1) swiperV.mousewheel.enable();
-else swiperV.mousewheel.disable();
-
-
-
-//console.log('ВТОРОСТЕПЕННЫЙ СЛАЙДЕР', swiperV2.realIndex);
-});
-*/
-
-
-
-
-var swiper1 = new Swiper('.swiper-container4', {
+    var swiper1 = new Swiper('.swiper-container4', {
             paginationClickable: true,
-         //   centeredSlides: true,
-            slidesPerView: 2,
+           
             nested: true,
             spaceBetween: 5,
             loop: true,
-        
             paginationClickable: true,
             grabCursor: true,
-
             speed: 500,
+
+
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-          
-        });
 
-        var swiper1 = new Swiper('.swiper-container3', {
-
-            slidesPerView: 4,
-            nested: true,
-            spaceBetween: 5,
-
-
-            speed: 500,
-
-
+            breakpoints: {
+    320: {
+        slidesPerView: 1,
+    },
+    725: {
+        slidesPerView: 2,
+    }}
         });
         </script>
     </body>

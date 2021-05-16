@@ -36,16 +36,16 @@ line-height: 24px;
                                 </a>
                             </li>
                             <li class="menu-list__item ">
-                                <a style="color: black;" href="./pages/business.html">для бізнесу</a>
+                                <a style="color: black;" href="./business.html">для бізнесу</a>
                             </li>
                             <li class="menu-list__item ">
-                                <a href="./pages/about_us.html">про нас</a>
+                                <a href="./about.html">про нас</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header--right">
-                    <a href="#end" class="btn bs">поспілкуємось?</a>
+                    <a  class="btn bs">поспілкуємось?</a>
                 </div>
             </div>
         </header>
@@ -55,12 +55,12 @@ line-height: 24px;
                     <section class="promo">
                         <div class="container promo__container">
                             <div class="promo--left">
-                                <h1 class="promo__header">бізнес у твоїй кишені</h1>
+                                <h1 class="promo__header promo__header-business">бізнес у твоїй кишені</h1>
                                 <span style="float:left; display:flex;">
                                     <a href="#plan" class="promo__link bs-color">шо по планам</a>
                                     <a style="margin-top: auto;
                                     margin-bottom: auto;
-                                    padding-top: 35px;">💸</a>
+                                   ">💸</a>
                                 </span>
                             </div>
                             <div class="promo--right prm-right-bussines">
@@ -122,7 +122,7 @@ border-radius: 0px;
                             <div class="payment__item__img pii-business">
                                 <img width="400" src="./assets/Group 75.png" alt="phone">
                             </div>
-                            <div style="width:59vh; margin-left:0; margin-right:auto;" class="payment__item__descr payment__item__descr--reverse width-txt-payment">
+                            <div style="width:59vh; margin-left:0; margin-right:auto;" class="payment__item__descr payment__item__descr--reverse width-txt-payment ">
                                 слідкуй за своїм розкладом прямо у додатку в режимі реального часу 🐥
                             </div>
                         </div>
@@ -563,6 +563,11 @@ console.log(target);
             if(swiperV.realIndex > 0) element.classList.add("mystyle");
             else element.classList.remove("mystyle");
         });
+        swiperV.on('slideChange', function() {
+            if(swiperV.realIndex > 0) element.classList.add("mystyle");
+            else element.classList.remove("mystyle");
+        });
+
         swiperV.on('transitionEnd', function() {
  
   //console.log('Главный СЛАДЙЕР', swiperV.realIndex);

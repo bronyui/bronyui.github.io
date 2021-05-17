@@ -340,9 +340,11 @@ align-items: flex-start;;">
     }}});
 
 
-    $('.btnslide1').click(function(e) {
-    e.preventDefault();
-    swiperV.slideTo( 3,1000,false );
+
+
+        $(".btnslide1").on('click', function(){
+
+    swiperV.slideTo( 3,1000,true );
 });
 
 

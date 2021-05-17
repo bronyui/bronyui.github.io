@@ -42,7 +42,7 @@ html, body {
   position: relative;
   height: 100%;
   font-family: Inter;
-  background:red;
+  background:green;
 }
 body {
   font-family: Inter;
@@ -1242,7 +1242,7 @@ display:block;
     margin-right: auto;
     /* margin-left: -10%; */
     /* margin-right: 10%; */
-    margin-bottom: -250px;
+    margin-bottom: -350px;
 }
 
 

@@ -42,7 +42,7 @@ html, body {
   position: relative;
   height: 100%;
   font-family: Inter;
-  background:white;
+  background:red;
 }
 body {
   font-family: Inter;
@@ -1064,14 +1064,139 @@ textarea:focus, input:focus {
 }
 
 .img-promo-gradient {
-  left: 50% !important;
+  left: 70% !important;
   margin-left: -500px;
 }
 
 .dsplnone {
   display:none;
 }
+@media (max-width: 1024px) {
+  .prm-right-bussines img {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: -10%; */
+    /* margin-right: 10%; */
+    margin-bottom: -200px;
+}
+
+.prm-right-index img {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-left: -10%; */
+  /* margin-right: 10%; */
+  margin-bottom: -650px;
+}
+
+
+.prm-right-bussines-img, .prm-right-index-img {
+  left: 0 !important;
+  bottom: 0px !important;
+  position: absolute !important;
+  margin: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height:auto !important;
+  width:auto !important;
+  top: -100px;
+}
+
+
+
+  /* margin-bottom: -400px !important;
+}
+  /*
+  .prm-right-bussines-img {
+    height: 500px !important;
+    width: 100% !important;
+    max-width: 900px !important;
+
+    margin-left: -10%;
+    left: 0% !important;
+    border-radius: 0px;
+  }*/
+  .pii-business img {
+    max-width:350px;
+    width:80% !important;
+    left:10%;
+    margin-top: 20px;
+  
+  }
+
+  
+  .promo--left {
+    margin-top: -100px;
+  }
+  
+  .promo__header {
+    width: 400px;
+  }
+
+
+
+
+
+  .prm-right-bussines,  .prm-right-index {
+    height: auto;
+    display: flex;
+    bottom: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    grid-area: left;
+    width: 100%;
+    position: absolute;
+    margin-left: auto;
+    left: 0;
+    margin-top: 0;
+}
+  
+  
+  .prm-right-bussines img, .prm-right-index img {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right:auto;
+    /* margin-left: -10%; */
+    /* margin-right: 10%;*/
+    margin-bottom:-200px;
+  }
+  .prm-right-index img {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: -10%; */
+    /* margin-right: 10%; */
+    margin-bottom: -650px;
+  }
+  
+  .pii-business img {
+    max-width:350px;
+    width:80% !important;
+    left:10%;
+    margin-top: 20px;
+  
+  }
+  .prm-right-index-img {
+    max-width:950px !important;
+    }
+  }
 @media (max-width: 980px) {
+
+  .ab-under-txt {
+    max-width: 520px;
+}
   .dsplnone {
 display:block;
   }
@@ -1097,9 +1222,37 @@ display:block;
   width: calc(100%);
   margin-top: 10px;
 }
+
+
+
+
+
+
 }
 
 @media (max-width: 600px) {
+
+
+
+  .prm-right-index img {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-left: -10%; */
+    /* margin-right: 10%; */
+    margin-bottom: -250px;
+}
+
+
+
+  .hdr-about {
+    width:auto;
+  }
+  .promo--left {
+    margin-top: 0px;
+  }
   .plan__header {
     font-size: 38px;
     margin-top:0 !important;
@@ -1205,6 +1358,13 @@ font-size:22px;
     margin-left: 0;
     left: 0;
   }
+
+
+  .prm-right-index {
+    bottom: 0;
+    margin-bottom:0;
+}
+
   .promo--right img {
     position: relative;
     width: 85%;
@@ -1411,7 +1571,7 @@ margin-top: 30px;
   height: auto;
   display: flex;
   bottom: 0;
-  margin-bottom: -50%;
+  margin-bottom: -120px;
   justify-content: center;
   align-items: start;
   flex-direction: column;
@@ -1425,27 +1585,16 @@ margin-top: 30px;
 
 .prm-right-bussines img {
   position: relative;
-  width: 120%;
+  width: 100%;
   max-width: 600px;
-  margin-left: -2%;
+  margin-left: auto;
+  margin-right:auto;
   /* margin-left: -10%; */
   /* margin-right: 10%;*/
+  margin-bottom:0px;
 }
 
-.prm-right-bussines-img {
-position: absolute !important;
-    /* right: 30%; */
-    margin-right: 0;
-    height: 1000px !important;
-    width: 1000px !important;
-    max-width: 1000px !important;
-    top: 50%;
-    margin-left: -10%;
-    margin-top: -100%;
-    /* margin-bottom: 55% !important; */
-    left: -80% !important;
-    border-radius: 0px;
-}
+
 .pii-business img {
   max-width:350px;
   width:80% !important;

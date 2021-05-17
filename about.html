@@ -34,7 +34,7 @@
                     </nav>
                 </div>
                 <div class="header--right">
-                    <a  class="btn ab-clr">поспілкуємось?</a>
+                    <a  class="btn ab-clr btnslide1">поспілкуємось?</a>
                 </div>
             </div>
         </header>
@@ -338,6 +338,16 @@ align-items: flex-start;;">
         grabCursor: false,
         allowTouchMove:false,
     }}});
+
+
+    $('.btnslide1').click(function(e) {
+    e.preventDefault();
+    swiperV.slideTo( 3,1000,false );
+});
+
+
+
+
         swiperV.on('scroll', function() {
             if(swiperV.realIndex > 0) element.classList.add("mystyle");
             else element.classList.remove("mystyle");

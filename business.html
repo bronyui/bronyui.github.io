@@ -45,7 +45,7 @@ line-height: 24px;
                     </nav>
                 </div>
                 <div class="header--right">
-                    <a  class="btn bs">поспілкуємось?</a>
+                    <a  class="btn bs btnslide1">поспілкуємось?</a>
                 </div>
             </div>
         </header>
@@ -57,7 +57,7 @@ line-height: 24px;
                             <div class="promo--left">
                                 <h1 class="promo__header promo__header-business">бізнес у твоїй кишені</h1>
                                 <span style="float:left; display:flex;">
-                                    <a href="#plan" class="promo__link bs-color">шо по планам</a>
+                                    <a class="promo__link bs-color btnslide2">шо по планам</a>
                                     <a style="margin-top: auto;
                                     margin-bottom: auto;
                                    ">💸</a>
@@ -558,6 +558,20 @@ console.log(target);
     }
 }
         });
+
+
+
+        $('.btnslide1').click(function(e) {
+    e.preventDefault();
+    swiperV.slideTo( 5,1000,false );
+});
+
+
+$('.btnslide2').click(function(e) {
+    e.preventDefault();
+    swiperV.slideTo( 6,1000,false );
+});
+
 
         swiperV.on('scroll', function() {
             if(swiperV.realIndex > 0) element.classList.add("mystyle");

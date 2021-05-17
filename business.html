@@ -331,6 +331,8 @@ border-radius: 0px;
                     -ms-flex-direction: column;
                     flex-direction: column;" class="work">
                         <div class="container price__container">
+     
+                                 
                             <h2 class="price__header">вартість користування</h2>
                             <div class="price__text">
                                 <p>користування клієнтським додатком абсолютно безкоштовне.</p>
@@ -341,6 +343,10 @@ border-radius: 0px;
                                 </p>
                             </div>
                             <div class="price-wrapper">
+                                <div style="position:relative;" >
+                                <div class="swiper-container swiper-containerLine1">
+                                    <div class="swiper-wrapper">
+                                        <div  class="swiper-slide swpnotheight swp-sld-bsn1">
                                 <div class="price__item">
                                     <div class="price__item__header">
                                         <span>$30</span>/ місяць
@@ -356,6 +362,8 @@ border-radius: 0px;
                                         </div>
                                     </ul>
                                 </div>
+                                </div>
+                                <div  class="swiper-slide swpnotheight swp-sld-bsn2">
                                 <div class="price__item">
                                     <div class="price__item__header">
                                         <span>$60</span>/ місяць
@@ -370,7 +378,8 @@ border-radius: 0px;
                                             <li>1 філія</li>
                                         </div>
                                     </ul>
-                                </div>
+                                </div></div>
+                                <div class="swiper-slide swpnotheight swp-sld-bsn3">
                                 <div class="price__item">
                                     <div class="price__item__header">
                                         <span>$100</span>/ місяць
@@ -386,8 +395,14 @@ border-radius: 0px;
                                             <div>1 філія</div>
                                         </li>
                                     </ul>
-                                </div>
+                                </div></div>
+
+       
+                                </div></div>
+                             <div class="swiper-button-next swiper-button-next1"></div>
+                                <div class="swiper-button-prev swiper-button-prev1"></div></div> 
                             </div>
+                           
                             <h3 class="price__subheader">додаткові послуги 🌈</h3>
                             <div class="price__wrap">
                                 <div class="price__app">
@@ -403,7 +418,7 @@ border-radius: 0px;
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                     </div>    
                     </section>
                 </div>
                 <div class="swiper-slide" style="-webkit-box-pack: center;
@@ -703,6 +718,35 @@ var swiper1 = new Swiper('.swiper-container1', {
 }
 }
         });
+
+
+
+
+
+
+        var swiperLine1 = new Swiper('.swiper-containerLine1', {
+            slidesPerView: "auto",
+            nested: true,
+            spaceBetween: 5,
+            freeMode:true,
+
+
+            speed: 500,
+            navigation: {
+                nextEl: '.swiper-button-next1',
+                prevEl: '.swiper-button-prev1',
+            },
+
+          breakpoints: {
+
+1025: {
+    slidesPerView: 3,
+    spaceBetween: 0,
+}
+}
+
+});
+
         </script>
     </body>
 </html>

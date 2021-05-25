@@ -1,0 +1,64 @@
+var element = document.getElementById("hdr1");
+var swiperV = new Swiper('.swiper-container0', {
+    direction: 'vertical',
+    mousewheel: true,
+    speed: 600,
+    spaceBetween: 0,
+    /*  spaceBetween: 0,
+      breakpoints: {
+    320: {
+        grabCursor: true,
+        allowTouchMove:true,
+    },
+    1025: {
+        grabCursor: false,
+        allowTouchMove:false,
+    }}
+    */
+});
+
+
+
+
+$(".btnslide1").on('click', function () {
+
+    swiperV.slideTo(3, 1000, true);
+});
+
+
+
+
+swiperV.on('scroll', function () {
+    if (swiperV.realIndex > 0) element.classList.add("mystyle");
+    else element.classList.remove("mystyle");
+});
+swiperV.on('slideChange', function () {
+    if (swiperV.realIndex > 0) element.classList.add("mystyle");
+    else element.classList.remove("mystyle");
+});
+
+var swiper1 = new Swiper('.swiper-container4', {
+    paginationClickable: true,
+
+    nested: true,
+    spaceBetween: 5,
+    loop: true,
+    paginationClickable: true,
+    grabCursor: true,
+    speed: 500,
+
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        725: {
+            slidesPerView: 2,
+        }
+    }
+});

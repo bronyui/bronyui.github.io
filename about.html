@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
     <head>
         <meta charset="utf-8">
         <title>Бронюй</title>
@@ -7,8 +7,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+        <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
     </head>
     <body>
+        <div class="block-horizontal"><div><img width="100" src="assets/flip.svg"/> <p>Переверніть пристрій</p></div></div>
         <header id="hdr1" class="header">
             <div class="container header__container">
                 <div class="header--left">
@@ -28,7 +30,7 @@
                                 <a href="./business.html">для бізнесу</a>
                             </li>
                             <li class="menu-list__item ">
-                                <a style="color:black;" href="./about.html">про нас</a>
+                                <a style="color:black;" >про нас</a>
                             </li>
                         </ul>
                     </nav>
@@ -270,7 +272,9 @@ align-items: flex-start;;">
                     <footer class="footer">
                         <div class="footer__container">
                             <div class="footer__logo">
+                                <a href="./index.html">
                                 <img src="./assets/logo.svg" alt="logo">
+                                </a>
                             </div>
                             <div class="footer__contacts">
                                 <div class="footer__link">
@@ -322,67 +326,6 @@ align-items: flex-start;;">
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
-        <script>
-    var element = document.getElementById("hdr1");
-    var swiperV = new Swiper('.swiper-container0', {
-    direction: 'vertical',
-    mousewheel: true,
-    speed:900,
-    spaceBetween: 0,
-      breakpoints: {
-    320: {
-        grabCursor: true,
-        allowTouchMove:true,
-    },
-    1025: {
-        grabCursor: false,
-        allowTouchMove:false,
-    }}});
-
-
-
-
-        $(".btnslide1").on('click', function(){
-
-    swiperV.slideTo( 3,1000,true );
-});
-
-
-
-
-        swiperV.on('scroll', function() {
-            if(swiperV.realIndex > 0) element.classList.add("mystyle");
-            else element.classList.remove("mystyle");
-        });
-        swiperV.on('slideChange', function() {
-            if(swiperV.realIndex > 0) element.classList.add("mystyle");
-            else element.classList.remove("mystyle");
-        });
-
-    var swiper1 = new Swiper('.swiper-container4', {
-            paginationClickable: true,
-           
-            nested: true,
-            spaceBetween: 5,
-            loop: true,
-            paginationClickable: true,
-            grabCursor: true,
-            speed: 500,
-
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            breakpoints: {
-    320: {
-        slidesPerView: 1,
-    },
-    725: {
-        slidesPerView: 2,
-    }}
-        });
-        </script>
+        <script src="./js/about.js"></script>
     </body>
 </html>

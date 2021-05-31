@@ -25,6 +25,9 @@ $(".btnslide1").on('click', function () {
     swiperV.slideTo(3, 1000, true);
 });
 
+$("#topupslide, #topupslide1, #topupslide2").on('click', function () {
+    swiperV.slideTo(0, 1000, true);
+});
 
 
 

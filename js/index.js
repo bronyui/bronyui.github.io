@@ -41,6 +41,12 @@ $(".btnslide2").on('click', function () {
     swiperV.slideTo(6, 1000, true);
 });
 
+$("#topupslide, #topupslide1, #topupslide2").on('click', function () {
+    swiperV.slideTo(0, 1000, true);
+});
+
+
+
 
 swiperV.on('scroll', function () {
     if (swiperV.realIndex > 0) element.classList.add("mystyle");

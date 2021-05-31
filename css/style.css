@@ -213,6 +213,11 @@ body {
 -webkit-align-items: flex-start;;
 align-items: flex-start;;
 }
+
+.small-img-700indown {
+  max-width: 250px;
+  }
+
 .centavrt0 {
   width:85%;
   margin-top: auto;

@@ -1954,4 +1954,7 @@ align-items: flex-start;
 .pii-business img {
 max-width: 350px;
 }
+.small-img-700indown {
+max-width: 220px;
+}
 }  

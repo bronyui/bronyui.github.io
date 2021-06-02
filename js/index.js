@@ -174,7 +174,7 @@ var swiper1 = new Swiper('.swiper-container1', {
             spaceBetween: 10,
 
         },
-        1025: {
+        1180: {
             slidesPerView: 5,
             spaceBetween: 10,
         }

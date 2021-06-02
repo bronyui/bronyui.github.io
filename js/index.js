@@ -1,4 +1,5 @@
 var element = document.getElementById("hdr1");
+var element1 = document.getElementById("blckuparrow");
 $(function () {
 
     var $window = $(window);
@@ -52,17 +53,14 @@ $("#topupslide, #topupslide1, #topupslide2").on('click', function () {
 
 
 
-
 swiperV.on('scroll', function () {
-    if (swiperV.realIndex > 0) element.classList.add("mystyle");
-    else element.classList.remove("mystyle");
+    if (swiperV.realIndex > 0)  {element.classList.add("mystyle"); element1.classList.remove("mystyle1");  }
+    else {element.classList.remove("mystyle"); element1.classList.add("mystyle1");}
 });
-
 swiperV.on('slideChange', function () {
-    if (swiperV.realIndex > 0) element.classList.add("mystyle");
-    else element.classList.remove("mystyle");
+    if (swiperV.realIndex > 0) {element.classList.add("mystyle"); element1.classList.remove("mystyle1"); }
+    else {element.classList.remove("mystyle"); element1.classList.add("mystyle1"); }
 });
-
 
 
 swiperV.on('transitionEnd', function () {

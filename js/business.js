@@ -46,7 +46,10 @@
   
   
   
-   
+
+          $(".arrow-top ").on('click', function () {
+            swiperV.slideTo(0, 1000, true);
+        });
   
   $(".btnslide1").on('click', function(){
   

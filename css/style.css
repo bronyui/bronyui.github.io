@@ -159,7 +159,29 @@ body {
   justify-content: center;
   align-self: center;
 }
-
+.arrow-top {
+  position: fixed;
+z-index: 999999;
+bottom: 15px;
+right: 15px;
+width: 55px;
+height: 55px;
+border-radius: 100px;
+background-color: rgba(160, 106, 249, 0.81);
+  display:none;
+}
+.arrow-top  img {
+  position: absolute;
+margin-top: auto;
+margin-right: 0;
+width: 25px;
+margin-left: -12.5px;
+left: 50%;
+top: 50%;
+margin-top: -12.5px;
+height: 25px;
+display: inline-block;
+}
 #container>div {
   width: 50%;
   height: 100vh;
@@ -1532,6 +1554,9 @@ textarea:focus, input:focus {
   .swiper-button-prev, .swiper-button-next, .mystyle {
     display: none !important;
   }
+  .arrow-top {
+    display:block;
+  }
   .swiper-container1 .swiper-slide {
     transform: scale(0.8) !important;
   }
@@ -1843,9 +1868,13 @@ textarea:focus, input:focus {
   align-items: flex-start;
 }
 
-@media screen and (min-width: 980px) and (max-height: 685px) {
+@media screen and (min-width: 980px) and (max-height: 783px) {
   .mystyle {
     display: none !important;
+  }
+
+  .arrow-top {
+    display:block;
   }
 }
 

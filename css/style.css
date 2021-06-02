@@ -1315,6 +1315,10 @@ textarea:focus, input:focus {
 }
 
 @media (max-width: 980px) {
+  .blumberh {
+margin-right:15px !important;
+  }
+
   .ab-under-txt {
     max-width: 520px;
   }

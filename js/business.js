@@ -214,8 +214,10 @@
               },
   
             breakpoints: {
-  
-  25: {
+                10: {
+                    slidesPerView: "auto",
+                },              
+  600: {
       slidesPerView: 3,
       spaceBetween: 0,
   }

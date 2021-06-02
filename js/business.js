@@ -163,7 +163,7 @@
           spaceBetween: 10,
          
       },
-      1025: {
+      1180: {
           slidesPerView: 5,
           spaceBetween: 10,
       }

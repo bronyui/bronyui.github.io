@@ -425,7 +425,7 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 3px solid #a06af9;
-  background-color: #fff;
+  background-color:transparent;
   cursor: pointer;
   font-family: Inter;
   font-style: normal;

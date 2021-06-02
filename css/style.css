@@ -1313,11 +1313,13 @@ textarea:focus, input:focus {
     max-width: 950px !important;
   }
 }
-
-@media (max-width: 980px) {
-  .blumberh {
-margin-right:15px !important;
+@media (max-width: 1028px) {
+.blumberh {
+  margin-right:15px !important;
+    }
+  
   }
+@media (max-width: 980px) {
 
   .ab-under-txt {
     max-width: 520px;

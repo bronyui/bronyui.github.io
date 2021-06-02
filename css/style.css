@@ -20,7 +20,9 @@
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/inter-v3-cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v3-cyrillic-500.woff2") format("woff2"), url("../fonts/inter-v3-cyrillic-500.woff") format("woff"), url("../fonts/inter-v3-cyrillic-500.ttf") format("truetype"), url("../fonts/inter-v3-cyrillic-500.svg#Inter") format("svg");
 }
-
+.mystyle1 {
+display:none !important;
+}
 @font-face {
   font-family: 'Inter';
   font-display: swap;
@@ -172,15 +174,19 @@ background-color: rgba(160, 106, 249, 0.81);
 }
 .arrow-top  img {
   position: absolute;
-margin-top: auto;
-margin-right: 0;
-width: 25px;
-margin-left: -12.5px;
-left: 50%;
-top: 50%;
-margin-top: -12.5px;
-height: 25px;
-display: inline-block;
+  margin-top: auto;
+  margin-right: 0;
+  width: 25px;
+  margin-left: -12.5px;
+  left: 50%;
+  top: 50%;
+  margin-top: -12.5px;
+  height: 25px;
+  display: inline-block;
+  transform: rotate(
+-90deg
+);
+
 }
 #container>div {
   width: 50%;

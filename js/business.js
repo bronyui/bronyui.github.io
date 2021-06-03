@@ -44,6 +44,7 @@ var swiperV = new Swiper('.swiper-container0', {
 
 
 $(".arrow-top").on('click', function () {
+    swiperV.mousewheel.enable();
     swiperV.slideTo(0, 1000, true);
 });
 

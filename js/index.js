@@ -1,4 +1,5 @@
 var element = document.getElementById("hdr1");
+var element1 = document.getElementById("blckuparrow");
 $(function () {
 
     var $window = $(window);
@@ -32,6 +33,12 @@ var swiperV = new Swiper('.swiper-container0', {
 });
 
 
+
+$(".arrow-top").on('click', function () {
+    swiperV.mousewheel.enable();
+    swiperV.slideTo(0, 1000, true);
+});
+
 $(".btnslide1").on('click', function () {
     swiperV.slideTo(5, 1000, true);
 });
@@ -47,17 +54,14 @@ $("#topupslide, #topupslide1, #topupslide2").on('click', function () {
 
 
 
-
 swiperV.on('scroll', function () {
-    if (swiperV.realIndex > 0) element.classList.add("mystyle");
-    else element.classList.remove("mystyle");
+    if (swiperV.realIndex > 0)  {element.classList.add("mystyle"); element1.classList.remove("mystyle1");  }
+    else {element.classList.remove("mystyle"); element1.classList.add("mystyle1");}
 });
-
 swiperV.on('slideChange', function () {
-    if (swiperV.realIndex > 0) element.classList.add("mystyle");
-    else element.classList.remove("mystyle");
+    if (swiperV.realIndex > 0) {element.classList.add("mystyle"); element1.classList.remove("mystyle1"); }
+    else {element.classList.remove("mystyle"); element1.classList.add("mystyle1"); }
 });
-
 
 
 swiperV.on('transitionEnd', function () {
@@ -174,7 +178,7 @@ var swiper1 = new Swiper('.swiper-container1', {
             spaceBetween: 10,
 
         },
-        1025: {
+        1180: {
             slidesPerView: 5,
             spaceBetween: 10,
         }

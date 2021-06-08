@@ -1,0 +1,191 @@
+.price__text {
+    color: #686c7c;
+    font-weight: 500;
+    text-align: left;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.price__text p {
+    margin: 1.39vw 0 0 0;
+    color: #686c7c !important;
+    text-align: left !important;
+    max-width: 70rem;
+}
+
+.price__header {
+    color: #000;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72.61px;
+}
+
+.price-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.price__item {
+    margin: 5vw 9.03vw 0 0;
+    margin-top: 35px;
+}
+
+.price__item__header {
+    color: #686c7c;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    margin: 0 0 2.43vw 0;
+}
+
+.price-wrapper :last-child {
+    margin-right: 0;
+}
+
+.price__item__header span {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.price__item__list {
+    list-style: none;
+    color: #686c7c;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.price__item__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: .7vw 0 0 0;
+}
+
+.price__item__link .dot {
+    margin-right: .5vw;
+    width: .47vw;
+    height: .47vw;
+    background: #686c7c;
+    border-radius: 100%;
+}
+
+.price__subheader {
+    margin: 2.083vw 0 0 0;
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.price__wrap {
+    margin: 2.083vw 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.price__app__descr {
+    color: #686c7c;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.price__wrap :last-child {
+    margin-right: 0;
+}
+
+.price__app__price {
+    margin-top: .694vw;
+    color: #686c7c;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+}
+
+.price__app__price span {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.price__app {
+    margin-right: 7.43vw;
+}
+
+.price-wrapper :nth-child(3) {
+    max-width: auto;
+}
+
+.price__item__list .ref {
+    display: block;
+    width: 18.83vw;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .price__header {
+        color: #000;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 30.61px;
+        margin-bottom: 15px;
+    }
+    .price__text p {
+        margin: 1.39vw 0 0 0;
+        color: gray;
+        text-align: left;
+        max-width: 70rem;
+    }
+    .price__item__header span {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .price__item__header {
+        font-size: 14px;
+        margin: 0 0 2.43vw 0;
+    }
+    .price__item__list {
+        list-style: none;
+        color: #686c7c;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .price__subheader {
+        margin: 2.083vw 0 0 0;
+        margin-top: 20px;
+        color: #000;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 36px;
+    }
+    .price__app__price span {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .price__app__price span {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .price__app__descr {
+        color: #686c7c;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .price__item__list .ref {
+        width: auto;
+        font-size: 14px;
+    }
+    .price__app__price {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .price__item {
+        margin: 5vw 9.03vw 0 0;
+    }
+}

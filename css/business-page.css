@@ -1,0 +1,13 @@
+.swp-sld-bsn1, .swp-sld-bsn2, .swp-sld-bsn3 {
+    max-width: auto;
+    min-width: 220px;
+}
+
+.lets-talk-button {
+    background-color: #F08FA9;
+}
+
+.bs-color {
+    color: #F08FA9;
+    border-bottom: 3px solid #F08FA9;
+}

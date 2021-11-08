@@ -40,11 +40,13 @@ function showSlides(n) {
 
 //$('a').append(Math.random());
 
-    $(window).bind({
+   /* $(window).bind({
         beforeunload: function(ev) {
             ev.preventDefault();
         },
         unload: function(ev) {
             ev.preventDefault();
         }
-    });
+    });*/
+
+    $('a').click(function() { return false; });

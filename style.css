@@ -3,7 +3,8 @@ html {
     background-image: url("src/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100%;
+    
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
 
 .header-title {
     font-family: Inter;
@@ -114,6 +116,7 @@ main {
 @media (max-width: 1024px) {
     body {
         background-image: url("src/background-ipad.png");
+        background-size: cover;
     }
     .btn-google {
         width: 45%;
@@ -166,11 +169,16 @@ main {
         margin-top: 35px;
         margin-left: 10px;
     }
+
+    .header-title object{
+        width: 70%;
+    }
 }
 
 @media (max-width: 834px) {
     body {
         background-image: url("src/background-ipad.png");
+        background-size: cover;
     }
     .btn-google {
         width: 40%;
@@ -226,6 +234,7 @@ main {
 @media (max-width: 414px) {
     body {
         background-image: url("src/background-iphone.png");
+        background-size: cover;
     }
     .header-title {
         margin-top: 30px;
@@ -318,6 +327,17 @@ main {
 }
 
 @media (max-width: 320px) {
+    html{
+        width: 100%;
+    }
+    body{
+        background-image: url('src/iPhone SE - 2.png');
+        background-size: cover;
+        
+    }
+    html{
+        width: 120%;
+    }
     .header-title {
         margin-left: 30px;
         margin-top: 20px;
@@ -326,6 +346,7 @@ main {
         margin-left: 30px;
         margin-top: 19px;
         height: 100%;
+        
     }
     .main-title {
         font-size: 14px;

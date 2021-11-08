@@ -9,7 +9,7 @@ function nextSlide() {
 }
 
 /* Уменьшает индекс на 1 — показываем предыдущий слайд*/
-function previousSlide() {
+/*function previousSlide() {
     showSlides(slideIndex -= 1);  
 }
 
@@ -41,7 +41,7 @@ function showSlides(n) {
 
 //$('a').append(Math.random());
 
-   /* $(window).bind({
+  /*  $(window).bind({
         beforeunload: function(ev) {
             ev.preventDefault();
         },
@@ -50,7 +50,7 @@ function showSlides(n) {
         }
     });*/
 
-    //$('a').on('click', function (e) { e.preventDefault() });
+//$('a').on('click', function (e) { e.preventDefault() });
 
 
     

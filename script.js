@@ -1,3 +1,4 @@
+$("#slider-box").load("index.html #slider-box");
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -8,7 +9,7 @@ function nextSlide() {
 }
 
 /* Уменьшает индекс на 1 — показываем предыдущий слайд*/
-/*function previousSlide() {
+function previousSlide() {
     showSlides(slideIndex -= 1);  
 }
 
@@ -30,7 +31,7 @@ function showSlides(n) {
         slideIndex = slides.length
     }
   
-  /* Проходим по каждому слайду в цикле for */
+  // Проходим по каждому слайду в цикле for */
     for (let slide of slides) {
         slide.style.display = "none";
     }   
@@ -50,3 +51,6 @@ function showSlides(n) {
     });*/
 
     //$('a').on('click', function (e) { e.preventDefault() });
+
+
+    

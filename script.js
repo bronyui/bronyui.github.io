@@ -49,4 +49,4 @@ function showSlides(n) {
         }
     });*/
 
-    $('a').on('click', function (e) { e.preventDefault() });
+    //$('a').on('click', function (e) { e.preventDefault() });

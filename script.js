@@ -54,5 +54,10 @@ function showSlides(n) {
 
 $('.next').on('click', function (e) { e.preventDefault(); nextSlide() });
 
-
+$(document).ready(function(){
+    $('.next').click(function(event){
+        event.preventDefault();
+        nextSlide();
+    })
+});
     

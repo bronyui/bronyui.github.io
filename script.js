@@ -1,4 +1,4 @@
-$("#slider-box").load(document.URL + " #slider-box");
+
 let slideIndex = 1;
 showSlides(slideIndex);
 

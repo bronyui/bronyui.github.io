@@ -39,6 +39,8 @@ function showSlides(n) {
     
 }
 
+
+
 //$('a').append(Math.random());
 
   /*  $(window).bind({
@@ -50,7 +52,7 @@ function showSlides(n) {
         }
     });*/
 
-//$('a').on('click', function (e) { e.preventDefault() });
+$('.next').on('click', function (e) { e.preventDefault() });
 
 
     

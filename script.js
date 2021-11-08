@@ -52,7 +52,7 @@ function showSlides(n) {
         }
     });*/
 
-$('.next').on('click', function (e) { e.preventDefault() });
+$('.next').on('click', function (e) { e.preventDefault(); nextSlide() });
 
 
     

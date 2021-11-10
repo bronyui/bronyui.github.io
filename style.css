@@ -231,6 +231,7 @@ main {
         justify-content: space-between;
     }
 
+    
     .header-title object{
         width: 70%;
     }
@@ -245,7 +246,7 @@ main {
 @media screen and (min-width: 1194px) {
     .screens-block{
         width: 50%;
-        margin-top: 0;
+        margin-top: 1%;
     }
 
     .main-details{
@@ -321,7 +322,7 @@ main {
     }
     .header-title {
         margin-top: 30px;
-        margin-left: -1%;
+        margin-left: 5%;
     }
     
     
@@ -391,7 +392,7 @@ main {
     }
     
     .header-title {
-        margin-left: 8%;
+        margin-left: 5%;
         margin-top: 20px;
     }
 

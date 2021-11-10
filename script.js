@@ -1,9 +1,9 @@
 
-let slideIndex = 1;
+/*let slideIndex = 1;
 showSlides(slideIndex);
 
 /* Увеличиваем индекс на 1 — показываем следующий слайд*/
-function nextSlide() {
+/*function nextSlide() {
     showSlides(slideIndex += 1);
     
 }
@@ -14,13 +14,13 @@ function nextSlide() {
 }
 
 /* Устанавливаем текущий слайд */
-function currentSlide(n) {
+/*function currentSlide(n) {
     showSlides(slideIndex = n);
     
 }
 
 /* Функция перелистывания */
-function showSlides(n) {
+/*function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("item");
     
@@ -32,7 +32,7 @@ function showSlides(n) {
     }
   
   // Проходим по каждому слайду в цикле for */
-    for (let slide of slides) {
+    /*for (let slide of slides) {
         slide.style.display = "none";
     }   
     slides[slideIndex - 1].style.display = "block"; 
@@ -52,12 +52,12 @@ function showSlides(n) {
         }
     });*/
 
-$('.next').on('click', function (e) { e.preventDefault(); nextSlide() });
+/*$('.next').on('click', function (e) { e.preventDefault(); nextSlide() });
 
 $(document).ready(function(){
     $('.next').click(function(event){
         event.preventDefault();
         nextSlide();
     })
-});
+});*/
     

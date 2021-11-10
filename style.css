@@ -3,7 +3,7 @@ html {
     background-image: url("src/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
     
 }
 
@@ -29,6 +29,11 @@ body {
     display: none;
 }
 
+main{
+    position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%);
+}
 .main-block {
     width: 40%;
     height: 100%;
@@ -36,6 +41,7 @@ body {
     margin-top: 80px;
     margin-right: 0px;
     font-family: Inter;
+    
 }
 
 .emoji-dog {
@@ -114,9 +120,13 @@ main {
 }
 
 @media (max-width: 1024px) {
+    html{
+        height: 100%;
+    }
     body {
         background-image: url("src/background-ipad.png");
         background-size: 100%;
+        height: 100%;
     }
     .btn-google {
         width: 45%;
@@ -239,11 +249,26 @@ main {
     .main-details{
         margin-right:40px;
     }
+    html{
+        height: 100%;
+    }
+
+    body{
+        background-size: 100%;
+        height: 100%;
+    }
+
+   
 }
+
 @media (max-width: 414px) {
+    html{
+        height: 100%;
+    }
     body {
         background-image: url("src/background-iphone.png");
-        background-size: cover;
+        background-size: 100%;
+        height: 100%;
     }
     .header-title {
         margin-top: 30px;
@@ -294,43 +319,9 @@ main {
         margin-top: 40px;
         margin-bottom: 15px;
     }
-    .slider .item img {
-        object-fit: cover;
+    
+    .slider object{
         width: 100%;
-        height: 415px;
-    }
-    .slider .next {
-        border: none;
-    background-color: transparent;
-    outline: none;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -22px;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 16px;
-        transition: 0.6s ease;
-        
-        
-    }
-    .slider .next {
-        right: -50px;
-        border-radius: 3px 0 0 3px;
-    }
-    .slider .item {
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-    @keyframes fade {
-        from {
-            opacity: 0.4
-        }
-        to {
-            opacity: 1
-        }
     }
     .screens-block-ipad {
         display: none;
@@ -340,6 +331,7 @@ main {
 @media (max-width: 320px) {
     html{
         width: 100%;
+        height: 100%;
     }
     body{
         background-image: url('src/iPhone SE - 2.png');
@@ -377,9 +369,12 @@ main {
         display: none;
     }
     .slider {
-        width: 90%;
-        padding: 5%;
-        margin-top: 3%;
+        margin: 5%;
+        
+    }
+
+    .slider object{
+        width: 100%;
     }
     .item {
         margin: 5%;

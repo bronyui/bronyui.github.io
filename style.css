@@ -301,6 +301,13 @@ main {
         width: 100%;
     }
 
+    .header-title {
+        margin-left: 6%;
+    }
+
+    .main-block{
+        margin-left: 6%;
+    }
 }
 
 @media (max-width: 414px) {

@@ -229,6 +229,10 @@ main {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .header-title object{
+        width: 50%;
+    }
     .header-downloads {
         display: flex;
         align-items: center;

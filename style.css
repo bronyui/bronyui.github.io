@@ -265,13 +265,14 @@ main {
 }
 
 @media (min-width: 428px) {
-    .header-title{
-        width: 50%;
+    
+
+    
+
+    .header-downloads{
+        display: none;
     }
 
-    .header-title object{
-        width: 50%;
-    }
 }
 
 @media (max-width: 414px) {

@@ -223,6 +223,9 @@ main {
     .block-downloads {
         display: none;
     }
+    .header-downloads{
+        display: block;
+    }
     header {
         display: flex;
         flex-direction: row;
@@ -264,12 +267,39 @@ main {
     }
 }
 
-@media (min-width: 428px) {
-    
+@media (max-width: 428px) {
+    .header-downloads{
+        display: none;
+    }
 
+    .main-block{
+        margin-top: 70px;
+    }
     
+    .main-title{
+        font-size: 16px;
+        line-height: 22.4px;
+    }
 
+    .block-downloads{
+        display: block;
+    }
+    .screens-block-ipad{
+        display: none;
+    }
+    .slider {
+        display: block;
+        max-width: 90%;
+        height: 100%;
+        position: relative;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
     
+    .slider object{
+        width: 100%;
+    }
 
 }
 

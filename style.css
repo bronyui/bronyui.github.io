@@ -264,6 +264,16 @@ main {
     }
 }
 
+@media (min-width: 428px) {
+    .header-title{
+        width: 50%;
+    }
+
+    .header-title object{
+        width: 50%;
+    }
+}
+
 @media (max-width: 414px) {
     html{
         height: 100%;

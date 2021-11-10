@@ -229,7 +229,7 @@ main {
     }
 
     .header-title object{
-        width: 50%;
+        width: 70%;
     }
     .header-downloads {
         display: flex;

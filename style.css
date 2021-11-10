@@ -176,9 +176,7 @@ main {
         margin-left: 10px;
     }
 
-    .header-title object{
-        width: 70%;
-    }
+    
 }
 
 @media (max-width: 834px) {

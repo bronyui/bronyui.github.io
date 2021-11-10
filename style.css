@@ -44,7 +44,7 @@ main {
     width: 40%;
     height: 100%;
     margin-left: 45px;
-    margin-top: 80px;
+    margin-top: 10%;
     margin-right: 0px;
     font-family: Inter;
     
@@ -102,13 +102,15 @@ main {
 }
 
 .screens-block {
-    margin-top: 0px;
+    margin-top: 30px;
     flex-grow: 2;
     padding: 0;
+    width: 50%;
 }
 
 .screens-block object {
     float: right;
+    width: 95%;
 }
 
 .screens-block-ipad {
@@ -243,6 +245,7 @@ main {
 @media screen and (min-width: 1194px) {
     .screens-block{
         width: 50%;
+        margin-top: 0;
     }
 
     .main-details{

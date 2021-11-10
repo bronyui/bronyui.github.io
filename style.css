@@ -267,7 +267,7 @@ main {
     }
     body {
         background-image: url("src/background-iphone.png");
-        background-size: 100%;
+        background-size: cover;
         height: 100%;
     }
     .header-title {
@@ -339,9 +339,7 @@ main {
         background-size: cover;
         
     }
-    html{
-        width: 120%;
-    }
+    
     .header-title {
         margin-left: 30px;
         margin-top: 20px;

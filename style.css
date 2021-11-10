@@ -29,6 +29,11 @@ main {
     padding-right: 10px;
 }
 
+.header-title object {
+    width: 142px;
+    height: 43px;
+}
+
 .header-downloads {
     display: none;
 }

@@ -12,7 +12,11 @@ body {
     padding: 0px;
     margin: 0px;
 }
-
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .header-title {
     font-family: Inter;
@@ -29,11 +33,7 @@ body {
     display: none;
 }
 
-main{
-    position: absolute;               /* 2 */
-   top: 50%;                         /* 3 */
-   transform: translate(0, -50%);
-}
+
 .main-block {
     width: 40%;
     height: 100%;
@@ -95,11 +95,7 @@ main{
     cursor: pointer;
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
 
 .screens-block {
     margin-top: 0px;
@@ -258,7 +254,11 @@ main {
         height: 100%;
     }
 
-   
+    main{
+        position: absolute;               
+       top: 50%;                         
+       transform: translate(0, -50%);
+    }
 }
 
 @media (max-width: 414px) {
@@ -283,6 +283,7 @@ main {
     .block-downloads {
         display: flex;
     }
+    
     .main-block {
         margin-left: 30px;
         margin-top: 30px;
@@ -379,5 +380,11 @@ main {
     .item {
         margin: 5%;
         margin-left: 15%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }

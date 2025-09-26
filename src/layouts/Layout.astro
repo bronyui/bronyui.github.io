@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
 
 export interface Props {
 	title: string;
@@ -43,6 +44,10 @@ const {
 		<title>{title}</title>
 	</head>
 	<body class="font-sans antialiased bg-black text-foreground">
+		<div class="relative z-50">
+			<Navbar />
+		</div>
+
 		<slot />
 
 		<script>

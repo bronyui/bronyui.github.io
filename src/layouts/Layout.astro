@@ -1,12 +1,13 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
 export interface Props {
 	title: string;
 	description?: string;
 }
 
-const { title, description = "Modern, powerful tools for your business" } = Astro.props;
+const { title, description = "Modern, powerful tools for your business" } =
+	Astro.props;
 ---
 
 <!doctype html>
@@ -16,12 +17,30 @@ const { title, description = "Modern, powerful tools for your business" } = Astr
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="preload" href="/assets/fonts/VisueltPro-Regular.ttf" as="font" type="font/ttf" crossorigin />
-		<link rel="preload" href="/assets/fonts/VisueltPro-Medium.ttf" as="font" type="font/ttf" crossorigin />
-		<link rel="preload" href="/assets/fonts/VisueltPro-Bold.ttf" as="font" type="font/ttf" crossorigin />
+		<link
+			rel="preload"
+			href="/assets/fonts/VisueltPro-Regular.ttf"
+			as="font"
+			type="font/ttf"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/assets/fonts/VisueltPro-Medium.ttf"
+			as="font"
+			type="font/ttf"
+			crossorigin
+		/>
+		<link
+			rel="preload"
+			href="/assets/fonts/VisueltPro-Bold.ttf"
+			as="font"
+			type="font/ttf"
+			crossorigin
+		/>
 		<title>{title}</title>
 	</head>
-	<body class="font-sans antialiased bg-background text-foreground">
+	<body class="font-sans antialiased bg-black text-foreground">
 		<slot />
 	</body>
 </html>

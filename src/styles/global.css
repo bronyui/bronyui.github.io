@@ -17,11 +17,6 @@
     --input: 0 0% 15%;
     --ring: 0 0% 83%;
     --radius: 0.5rem;
-
-    /* Force #080808 background everywhere */
-    --background: 0 0% 3.1%;
-    /* #080808 converted to HSL */
-    --foreground: 0 0% 98%;
 }
 
 /* VisueltPro Font Faces */

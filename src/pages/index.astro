@@ -1,19 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
-import Features from "../components/Features.astro";
-import CTASection from "../components/CTASection.astro";
 import FAQ from "../components/FAQ.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 ---
 
 <Layout title="Spottly - Сучасні інструменти для сучасних команд">
+	<img
+		src="/assets/images/landing_hero_bg.png"
+		alt="Hero Background"
+		class="absolute top-0 inset-0 w-full h-auto object-contain z-0"
+	/>
 	<Hero />
-
-	<Features />
-
-	<CTASection />
 
 	<FAQ />
 
